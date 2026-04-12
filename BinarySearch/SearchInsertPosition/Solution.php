@@ -6,8 +6,8 @@ class Solution {
    * @return Integer 
    */
   public function searchInsert($nums, $target) {
-    $start = 1;
-    $finish = count($nums);
+    $start = 0;
+    $finish = count($nums) - 1;
     $middle = 0;
     
     if ($target < 0) {
@@ -38,10 +38,16 @@ $testCases = [
     'expected' => 2, 
     'description' => 'Example 1'
   ],
+  [
+    'nums' => [1,3,5,6], 
+    'target' => 2, 
+    'expected' => 1, 
+    'description' => 'Example 2'
+  ],
 ];
 
 foreach ($testCases as $test) {
-  $result = $solution->searchInsert($test['nums'], 5);
+  $result = $solution->searchInsert($test['nums'], $test['target']);
   echo "Test: {$test['description']}\n";
   echo "Input: target = {$test['target']}\n";
   echo "Expected: {$test['expected']}\n";
