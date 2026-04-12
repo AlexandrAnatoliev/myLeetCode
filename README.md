@@ -1,4 +1,5 @@
 # Roadmap по алгоритмам 
+* прочитать теорию -> решать задачи
 
 ### Бинарный поиск
 * [First bad versioni](BinarySearch/FirstBadVersion/README.md)
