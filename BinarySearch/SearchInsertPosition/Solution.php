@@ -40,27 +40,27 @@ $solution = new Solution();
 
 $testCases = [
   [
-    'nums' => [1,3,5,6], 
-    'target' => 5, 
-    'expected' => 2, 
+    'nums' => [1,3,5,6],
+    'target' => 5,
+    'expected' => 2,
     'description' => 'Example 1'
   ],
   [
-    'nums' => [1,3,5,6], 
-    'target' => 2, 
-    'expected' => 1, 
+    'nums' => [1,3,5,6],
+    'target' => 2,
+    'expected' => 1,
     'description' => 'Example 2'
   ],
   [
-    'nums' => [1,3,5,6], 
-    'target' => 7, 
-    'expected' => 4, 
+    'nums' => [1,3,5,6],
+    'target' => 7,
+    'expected' => 4,
     'description' => 'Example 3'
   ],
   [
-    'nums' => [1,3,5], 
-    'target' => 3, 
-    'expected' => 1, 
+    'nums' => [1,3,5],
+    'target' => 3,
+    'expected' => 1,
     'description' => 'Example 4'
   ],
 ];
