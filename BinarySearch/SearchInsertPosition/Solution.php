@@ -13,6 +13,9 @@ class Solution {
     if ($target < 0) {
       return 0;
     }
+    if ($target > $nums[$finish]) {
+      return $finish + 1;
+    }
     while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
       if ($nums[$middle] == $target) {
@@ -43,6 +46,12 @@ $testCases = [
     'target' => 2, 
     'expected' => 1, 
     'description' => 'Example 2'
+  ],
+  [
+    'nums' => [1,3,5,6], 
+    'target' => 7, 
+    'expected' => 4, 
+    'description' => 'Example 3'
   ],
 ];
 
