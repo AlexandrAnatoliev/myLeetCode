@@ -32,6 +32,7 @@ $solution = new Solution();
 $testCases = [
   ['n' => 16, 'expected' => true, 'description' => 'Example 1'],
   ['n' => 14, 'expected' => false, 'description' => 'Example 2'],
+  ['n' => 1, 'expected' => true, 'description' => 'Test 3'],
 ];
 
 foreach ($testCases as $test) {
