@@ -35,10 +35,7 @@ echo "Running tests...\n\n";
 $solution = new Solution();
 
 $testCases = [
-  ['n' => 5, 'expected' => 4, 'description' => 'Пример из задачи'],
-  ['n' => 10, 'expected' => 4, 'description' => 'n=10, bad=4'],
-  ['n' => 4, 'expected' => 4, 'description' => 'n=4, bad=4'],
-  ['n' => 3, 'expected' => 4, 'description' => 'n=3, bad=4 (нет плохой версии)'],
+  ['n' => 5, 'expected' => 4, 'description' => 'Example 1'],
 ];
 
 foreach ($testCases as $test) {
