@@ -2,8 +2,8 @@
 * прочитать теорию -> решать задачи
 
 ### Бинарный поиск
-* [First bad versioni](BinarySearch/FirstBadVersion/README.md)
-* Valid perfect square
+* [First bad version](BinarySearch/FirstBadVersion/README.md)
+* [Valid perfect square](BinarySearch/ValidPerfectSquare/README.md)
 * Search insert position
 * Sqrt(x)
 * Search in rotated sorted array
