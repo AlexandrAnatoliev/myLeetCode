@@ -6,12 +6,27 @@ class Solution {
    * @return Integer 
    */
   public function searchInsert($nums, $target) {
+    $start = 1;
+    $finish = count($nums);
+    $middle = 0;
     
-    return 0;
+    if ($target < 0) {
+      return 0;
+    }
+    while ($start < $finish) {
+      $middle = $start + floor(($finish - $start) / 2);
+      if ($nums[$middle] == $target) {
+        return $middle;
+      } elseif ($nums[$middle] > $target) {
+        $finish = $middle;
+      } else {
+        $start = $middle + 1;
+      }
+    }
+    return $start;
   }
 }
 
-// Запуск тестов (вне класса)
 echo "Running tests...\n\n";
 
 $solution = new Solution();
