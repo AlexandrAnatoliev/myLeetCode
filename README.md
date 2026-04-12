@@ -1,7 +1,7 @@
 # Roadmap по алгоритмам 
 
 ### Бинарный поиск
-* First bad version
+* [First bad versioni](BinarySearch/FirstBadVersion/README.md)
 * Valid perfect square
 * Search insert position
 * Sqrt(x)
