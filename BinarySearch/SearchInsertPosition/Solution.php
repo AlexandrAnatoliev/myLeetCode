@@ -3,12 +3,13 @@ class Solution {
   /**
    * @param Integer[] $nums
    * @param Integer $target
-   * @return Integer 
+   * @return Integer
    */
   public function searchInsert($nums, $target) {
     $start = 0;
     $finish = count($nums) - 1;
     $middle = 0;
+    $answer = 0;
     
     if ($target < 0) {
       return 0;
@@ -18,15 +19,18 @@ class Solution {
     }
     while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
+      $answer = $start;
       if ($nums[$middle] == $target) {
-        return $middle;
+        $answer = $middle;
+        break;
       } elseif ($nums[$middle] > $target) {
         $finish = $middle;
       } else {
         $start = $middle + 1;
+        $answer = $start;
       }
     }
-    return $start;
+    return $answer;
   }
 }
 
@@ -52,6 +56,12 @@ $testCases = [
     'target' => 7, 
     'expected' => 4, 
     'description' => 'Example 3'
+  ],
+  [
+    'nums' => [1,3,5], 
+    'target' => 3, 
+    'expected' => 1, 
+    'description' => 'Example 4'
   ],
 ];
 
