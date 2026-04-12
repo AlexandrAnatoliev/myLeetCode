@@ -35,6 +35,5 @@ Output: 1
 
 #### Run tests
 ```
-> sudo /opt/lampp/bin/php run_test.php 
- > sudo /opt/lampp/bin/php run_test.php 
+> sudo /opt/lampp/bin/php Solution.php 
 ```
