@@ -4,7 +4,7 @@
 ### Бинарный поиск
 * [First bad version](BinarySearch/FirstBadVersion/README.md)
 * [Valid perfect square](BinarySearch/ValidPerfectSquare/README.md)
-* Search insert position
+* [Search insert position](BinarySearch/SearchInsertPosition/README.md)
 * Sqrt(x)
 * Search in rotated sorted array
 * Peak index in mountain array
