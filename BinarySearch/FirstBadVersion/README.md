@@ -32,3 +32,9 @@ Output: 1
 
 #### Constraints:
 * `1 <= bad <= n <= 2^31 - 1`
+
+#### Run tests
+```
+> sudo /opt/lampp/bin/php run_test.php 
+ > sudo /opt/lampp/bin/php run_test.php 
+```
