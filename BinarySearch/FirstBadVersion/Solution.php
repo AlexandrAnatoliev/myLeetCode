@@ -10,7 +10,7 @@ class Solution {
     $finish = $n;
     $middle = 0;
 
-    while ($start < $finish) { 
+    while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
       if ($this->isBadVersion($middle)) {
         $finish = $middle;
@@ -45,6 +45,10 @@ foreach ($testCases as $test) {
   echo "Input: n = {$test['n']}\n";
   echo "Expected: {$test['expected']}\n";
   echo "Result: {$result}\n";
-  echo ($result == $test['expected'] ? "✓ PASSED\n" : "✗ FAILED\n");
+  if ($result == $test['expected']) {
+    echo "✓ PASSED\n";
+  } else {
+    echo "✗ FAILED\n";
+  }
   echo "------------------------\n";
 }
