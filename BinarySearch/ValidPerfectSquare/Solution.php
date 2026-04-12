@@ -10,6 +10,10 @@ class Solution {
     $finish = $num;
     $middle = 0;
     
+    if ($num == 1) {
+      return true;
+    }
+
     while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
       if ($middle * $middle == $num) {
