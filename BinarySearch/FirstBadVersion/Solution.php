@@ -5,7 +5,7 @@ class Solution {
    * @param Integer $n
    * @return Integer
    */
-  function firstBadVersion($n) {
+  public function firstBadVersion($n) {
     $start = 1;
     $finish = $n;
     $middle = 0;
@@ -24,7 +24,7 @@ class Solution {
 
   // Временная реализация для тестирования
   public static $badVersion = 4;
-  function isBadVersion($n) {
+  public function isBadVersion($n) {
     return $n >= self::$badVersion;
   }
 }
