@@ -6,6 +6,20 @@ class Solution {
    * @return Boolean
    */
   public function isPerfectSquare($num) {
+    $start = 1;
+    $finish = $num;
+    $middle = 0;
+    
+    while ($start < $finish) {
+      $middle = $start + floor(($finish - $start) / 2);
+      if ($middle * $middle == $num) {
+        return true;
+      } elseif ($middle * $middle > $num) {
+        $finish = $middle;
+      } else {
+        $start = $middle + 1;
+      }
+    }
     return false; 
   }
 }
@@ -16,7 +30,7 @@ echo "Running tests...\n\n";
 $solution = new Solution();
 
 $testCases = [
-  ['n' => 5, 'expected' => true, 'description' => 'Example 1'],
+  ['n' => 16, 'expected' => true, 'description' => 'Example 1'],
 ];
 
 foreach ($testCases as $test) {
