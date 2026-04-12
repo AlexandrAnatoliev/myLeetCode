@@ -24,7 +24,7 @@ class Solution {
         $start = $middle + 1;
       }
     }
-    return false; 
+    return false;
   }
 }
 
