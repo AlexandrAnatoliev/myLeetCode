@@ -18,7 +18,7 @@ class Solution {
         $start = $middle + 1;
       }
     }
-    return $x;
+    return $middle;
   }
 }
 
@@ -31,6 +31,11 @@ $testCases = [
     'x' => 4,
     'expected' => 2,
     'description' => 'Example 1'
+  ],
+  [
+    'x' => 8,
+    'expected' => 2,
+    'description' => 'Example 2'
   ],
 ];
 
