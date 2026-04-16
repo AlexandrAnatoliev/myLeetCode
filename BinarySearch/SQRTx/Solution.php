@@ -39,6 +39,11 @@ $testCases = [
     'expected' => 2,
     'description' => 'Example 2'
   ],
+  [
+    'x' => 0,
+    'expected' => 0,
+    'description' => 'Example 3'
+  ],
 ];
 
 foreach ($testCases as $test) {
