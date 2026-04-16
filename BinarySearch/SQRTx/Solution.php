@@ -9,6 +9,9 @@ class Solution {
     $finish = $x;
     $middle = 0;
     $answer = 0;
+    if ($x == 1) {
+      return 1;
+    }
     while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
       if ($middle * $middle == $x) {
@@ -43,6 +46,11 @@ $testCases = [
     'x' => 0,
     'expected' => 0,
     'description' => 'Example 3'
+  ],
+  [
+    'x' => 1,
+    'expected' => 1,
+    'description' => 'Example 4'
   ],
 ];
 
