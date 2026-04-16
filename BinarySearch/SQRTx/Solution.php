@@ -5,6 +5,19 @@ class Solution {
    * @return Integer
    */
   public function mySqrt($x) {
+    $start = 1;
+    $finish = $x;
+    $middle = 0;
+    while ($start < $finish) {
+      $middle = $start + floor(($finish - $start) / 2);
+      if ($middle * $middle == $x) {
+        return $middle;
+      } elseif ($middle * $middle > $num) {
+        $finish = $middle;
+      } else {
+        $start = $middle + 1;
+      }
+    }
     return $x;
   }
 }
