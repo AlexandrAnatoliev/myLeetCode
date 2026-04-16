@@ -5,20 +5,22 @@ class Solution {
    * @return Integer
    */
   public function mySqrt($x) {
-    $start = 1;
+    $start = 0;
     $finish = $x;
     $middle = 0;
+    $answer = 0;
     while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
       if ($middle * $middle == $x) {
         return $middle;
-      } elseif ($middle * $middle > $num) {
+      } elseif ($middle * $middle > $x) {
         $finish = $middle;
       } else {
         $start = $middle + 1;
+        $answer = $middle;
       }
     }
-    return $middle;
+    return $answer;
   }
 }
 
