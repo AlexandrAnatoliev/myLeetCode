@@ -13,7 +13,7 @@ class Solution {
 
     $rotateIndex = $this->getRotateIndex($nums);
 
-    echo $rotateIndex . "\n";
+    echo 'rotateIndex = ' . $rotateIndex . "\n";
     if (count($nums) == 1 ) {
       if($nums[0] == $target) {
         return 0;
@@ -25,6 +25,8 @@ class Solution {
     } elseif ($rotateIndex == $finish) {
     } elseif ($nums[$finish] == $target) {
       return $finish;
+    } elseif ($nums[$start] == $target) {
+      return $start;
     } elseif ($nums[$finish] > $target) {
       $start = $rotateIndex + 1;
     } else {
