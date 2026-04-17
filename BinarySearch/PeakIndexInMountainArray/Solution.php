@@ -11,7 +11,7 @@ class Solution {
     while ($start < $finish) {
       $middle = $start + (int)(($finish - $start) / 2);
 
-      if (isset($arr[$middle - 1]) == isset($arr[$middle + 1])) {
+      if ($arr[$middle - 1] == $arr[$middle + 1]) {
         return $middle;
       } elseif ($arr[$middle] > $arr[$middle + 1]) {
         $finish = $middle;
