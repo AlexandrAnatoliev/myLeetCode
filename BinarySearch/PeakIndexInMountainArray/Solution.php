@@ -22,7 +22,6 @@ class Solution {
         $finish = $middle;
       } else {
         $start = $middle + 1;
-        $answer = $start;
       }
     }
     return $answer;
