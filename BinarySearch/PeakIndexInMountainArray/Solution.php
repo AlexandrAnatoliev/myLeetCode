@@ -11,11 +11,12 @@ class Solution {
 
     while ($start < $finish) {
       $middle = $start + (int)(($finish - $start) / 2);
-//       echo $start . ' ' . $middle . ' ' . $finish . "\n";
+      //       echo $start . ' ' . $middle . ' ' . $finish . "\n";
 
       if (isset($arr[$middle - 1]) && isset($arr[$middle + 1])
-        && ($arr[$middle - 1] == $arr[$middle + 1])) {
-          return $middle;
+        && ($arr[$middle - 1] < $arr[$middle])
+        && ($arr[$middle] > $arr[$middle + 1])) {
+        return $middle;
       } elseif (isset($arr[$middle + 1]) 
         && $arr[$middle] > $arr[$middle + 1]) {
         $finish = $middle;
