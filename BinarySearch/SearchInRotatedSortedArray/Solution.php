@@ -44,6 +44,11 @@ $getRotateIndexTestCases = [
     'expected' => 3,
     'description' => 'Test 1'
   ],
+  [
+    'nums' => [4, 5, 6, 7, 8, 0, 1, 2],
+    'expected' => 4,
+    'description' => 'Test 2'
+  ],
 ];
 
 foreach ($getRotateIndexTestCases as $test) {
