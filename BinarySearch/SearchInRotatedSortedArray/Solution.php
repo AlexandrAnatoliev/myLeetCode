@@ -8,7 +8,6 @@ class Solution {
   public function search($nums, $target) {
     $start = 0;
     $finish = count($nums) - 1;
-    $middle = 0;
     $answer = -1;
 
     $rotateIndex = $this->getRotateIndex($nums);
@@ -31,8 +30,7 @@ class Solution {
       return $answer;
     }
 
-    $answer = $this->binarSearch($nums, $start, $finish, $target);
-    return $answer;
+    return $this->binarSearch($nums, $start, $finish, $target);
   }
 
   /**
