@@ -7,19 +7,24 @@ class Solution {
   public function peakIndexInMountainArray($arr) {
     $start = 0;
     $finish = count($arr) - 1;
+    $answer = 0;
 
     while ($start < $finish) {
       $middle = $start + (int)(($finish - $start) / 2);
+//       echo $start . ' ' . $middle . ' ' . $finish . "\n";
 
-      if ($arr[$middle - 1] == $arr[$middle + 1]) {
-        return $middle;
-      } elseif ($arr[$middle] > $arr[$middle + 1]) {
+      if (isset($arr[$middle - 1]) && isset($arr[$middle + 1])
+        && ($arr[$middle - 1] == $arr[$middle + 1])) {
+          return $middle;
+      } elseif (isset($arr[$middle + 1]) 
+        && $arr[$middle] > $arr[$middle + 1]) {
         $finish = $middle;
       } else {
         $start = $middle + 1;
+        $answer = $start;
       }
     }
-    return 0;
+    return $answer;
   }
 }
 
