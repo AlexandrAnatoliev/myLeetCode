@@ -112,6 +112,12 @@ $searchTestCases = [
     'expected' => -1,
     'description' => 'Example 2'
   ],
+  [
+    'nums' => [1],
+    'target' => 0,
+    'expected' => -1,
+    'description' => 'Example 3'
+  ],
 ];
 
 foreach ($searchTestCases as $test) {
