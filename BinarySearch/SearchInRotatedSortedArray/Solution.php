@@ -27,8 +27,12 @@ class Solution {
       }
     } 
 
+    if ($answer != -1) {
+      return $answer;
+    }
+
     while ($start < $finish) {
-      $middle = $start + floor(($finish - $start) / 2);
+      $middle = $start + (int)(($finish - $start) / 2);
 
       if ($nums[$middle] == $target) {
         $answer = $middle;
