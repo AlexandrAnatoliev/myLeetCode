@@ -16,6 +16,10 @@ class Solution {
       if($nums[0] == $target) {
         return 0;
       }
+    } elseif (count($nums) == 2 ) {
+      if($nums[1] == $target) {
+        return 1;
+      }
     } elseif ($rotateIndex == $finish) {
     } elseif ($nums[$finish] > $target) {
       $start = $rotateIndex + 1;
@@ -24,6 +28,7 @@ class Solution {
     }
 
     while ($start < $finish) {
+      echo $start . ' ' . $middle . ' ' . $finish . "\n";
       $middle = $start + floor(($finish - $start) / 2);
 
       if ($nums[$middle] == $target) {
