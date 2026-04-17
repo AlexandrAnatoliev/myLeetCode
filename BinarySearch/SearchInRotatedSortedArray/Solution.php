@@ -23,7 +23,6 @@ class Solution {
       $finish = $rotateIndex;
     }
 
-    echo $start . ' ' . $middle . ' ' . $finish . "\n";
     while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
 
@@ -135,6 +134,12 @@ $searchTestCases = [
     'target' => 1,
     'expected' => 0,
     'description' => 'Example 5'
+  ],
+  [
+    'nums' => [1, 3],
+    'target' => 3,
+    'expected' => 1,
+    'description' => 'Example 6'
   ],
 ];
 
