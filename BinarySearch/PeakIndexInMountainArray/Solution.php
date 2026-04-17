@@ -5,21 +5,37 @@ class Solution {
    * @return Integer
    */
   public function peakIndexInMountainArray($arr) {
-    return 1;
+    $start = 0;
+    $finish = count($arr) - 1;
+
+    while ($start < $finish) {
+      $middle = $start + (int)(($finish - $start) / 2);
+
+      if (isset($arr[$middle - 1]) == isset($arr[$middle + 1])) {
+        return $middle;
+      } elseif ($arr[$middle] > $arr[$middle + 1]) {
+        $finish = $middle;
+      } else {
+        $start = $middle + 1;
+      }
+    }
+    return 0;
   }
 }
 
-
 echo "Running ALL tests...\n\n";
 $solution = new Solution();
-
-echo "Running GETROTATEINDEX tests...\n\n";
 
 $testCases = [
   [
     'arr' => [0,1,0],
     'expected' => 1,
     'description' => 'Example 1'
+  ],
+  [
+    'arr' => [0,2,1,0],
+    'expected' => 1,
+    'description' => 'Example 2'
   ],
 ];
 
