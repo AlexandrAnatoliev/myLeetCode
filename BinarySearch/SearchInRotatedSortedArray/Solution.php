@@ -13,14 +13,9 @@ class Solution {
 
     $rotateIndex = $this->getRotateIndex($nums);
 
-    echo 'rotateIndex = ' . $rotateIndex . "\n";
     if (count($nums) == 1 ) {
       if($nums[0] == $target) {
         return 0;
-      }
-    } elseif (count($nums) == 2 ) {
-      if($nums[1] == $target) {
-        return 1;
       }
     } elseif ($rotateIndex == $finish) {
     } elseif ($nums[$finish] == $target) {
@@ -35,7 +30,6 @@ class Solution {
 
     while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
-      echo $start . ' ' . $middle . ' ' . $finish . "\n";
 
       if ($nums[$middle] == $target) {
         $answer = $middle;
