@@ -25,12 +25,25 @@ class Solution {
       } else {
         $finish = $rotateIndex;
       }
-    } 
+    }
 
     if ($answer != -1) {
       return $answer;
     }
 
+    $answer = $this->binarSearch($nums, $start, $finish, $target);
+    return $answer;
+  }
+
+  /**
+   * @param Integer[] $nums
+   * @param Integer $start
+   * @param Integer $finish
+   * @param Integer $target
+   * @return Integer
+   */
+  public function binarSearch($nums, $start, $finish, $target) {
+    $answer = -1;
     while ($start < $finish) {
       $middle = $start + (int)(($finish - $start) / 2);
 
