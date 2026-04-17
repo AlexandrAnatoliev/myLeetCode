@@ -12,6 +12,8 @@ class Solution {
     $answer = -1;
 
     $rotateIndex = $this->getRotateIndex($nums);
+
+    echo $rotateIndex . "\n";
     if (count($nums) == 1 ) {
       if($nums[0] == $target) {
         return 0;
@@ -21,6 +23,8 @@ class Solution {
         return 1;
       }
     } elseif ($rotateIndex == $finish) {
+    } elseif ($nums[$finish] == $target) {
+      return $finish;
     } elseif ($nums[$finish] > $target) {
       $start = $rotateIndex + 1;
     } else {
