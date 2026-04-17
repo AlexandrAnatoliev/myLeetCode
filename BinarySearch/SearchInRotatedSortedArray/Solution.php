@@ -28,8 +28,8 @@ class Solution {
     }
 
     while ($start < $finish) {
-      echo $start . ' ' . $middle . ' ' . $finish . "\n";
       $middle = $start + floor(($finish - $start) / 2);
+//       echo $start . ' ' . $middle . ' ' . $finish . "\n";
 
       if ($nums[$middle] == $target) {
         $answer = $middle;
@@ -38,6 +38,10 @@ class Solution {
         $finish = $middle;
       } else {
         $start = $middle + 1;
+      }
+
+      if ($nums[$start] == $target) {
+        return $start;
       }
     }
     return $answer;
