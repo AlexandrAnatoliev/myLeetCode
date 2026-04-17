@@ -14,19 +14,18 @@ class Solution {
     $rotateIndex = $this->getRotateIndex($nums);
 
     if (count($nums) == 1 ) {
-      if($nums[0] == $target) {
-        return 0;
+      $answer = ($nums[0] == $target) ? 0 : -1;
+    } elseif ($rotateIndex != $finish) {
+      if ($nums[$finish] == $target) {
+        $answer = $finish;
+      } elseif ($nums[$start] == $target) {
+        $answer = $start;
+      } elseif ($nums[$finish] > $target) {
+        $start = $rotateIndex + 1;
+      } else {
+        $finish = $rotateIndex;
       }
-    } elseif ($rotateIndex == $finish) {
-    } elseif ($nums[$finish] == $target) {
-      return $finish;
-    } elseif ($nums[$start] == $target) {
-      return $start;
-    } elseif ($nums[$finish] > $target) {
-      $start = $rotateIndex + 1;
-    } else {
-      $finish = $rotateIndex;
-    }
+    } 
 
     while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
