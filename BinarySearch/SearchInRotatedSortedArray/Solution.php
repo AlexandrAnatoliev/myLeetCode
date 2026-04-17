@@ -29,7 +29,6 @@ class Solution {
         $start = $middle + 1;
       }
     }
-
     return $answer;
   }
 
@@ -117,6 +116,12 @@ $searchTestCases = [
     'target' => 0,
     'expected' => -1,
     'description' => 'Example 3'
+  ],
+  [
+    'nums' => [1],
+    'target' => 1,
+    'expected' => 1,
+    'description' => 'Example 4'
   ],
 ];
 
