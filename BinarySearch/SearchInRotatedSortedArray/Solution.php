@@ -6,7 +6,32 @@ class Solution {
    * @return Integer
    */
   public function search($nums, $target) {
+    $start = 0;
+    $finish = count($nums) - 1;
+    $middle = 0;
     $answer = 0;
+
+    $rotateIndex = $this->getRotateIndex($nums);
+    if ($nums[$finish] > $target) {
+      $start = $rotateIndex + 1;
+    } else {
+      $finish = $rotateIndex;
+    }
+
+    while ($start < $finish) {
+      $middle = $start + floor(($finish - $start) / 2);
+      $answer = $start;
+      if ($nums[$middle] == $target) {
+        $answer = $middle;
+        break;
+      } elseif ($nums[$middle] > $target) {
+        $finish = $middle;
+      } else {
+        $start = $middle + 1;
+        $answer = $start;
+      }
+    }
+
     return $answer;
   }
 
