@@ -33,10 +33,10 @@ class Solution {
   }
 }
 
-echo "Running tests...\n\n";
+echo "Running ALL tests...\n\n";
 $solution = new Solution();
 
-echo "Running getRotateIndex tests...\n\n";
+echo "Running GETROTATEINDEX tests...\n\n";
 
 $getRotateIndexTestCases = [
   [
@@ -54,6 +54,11 @@ $getRotateIndexTestCases = [
     'expected' => 8,
     'description' => 'Test 3'
   ],
+  [
+    'nums' => [1, 2, 3, 4, 5, 6, 7, 8, 0],
+    'expected' => 7,
+    'description' => 'Test 4'
+  ],
 ];
 
 foreach ($getRotateIndexTestCases as $test) {
@@ -69,7 +74,7 @@ foreach ($getRotateIndexTestCases as $test) {
   echo "------------------------\n";
 }
 
-echo "Running search tests...\n\n";
+echo "\n Running SEARCH tests...\n\n";
 
 $searchTestCases = [
   [
