@@ -12,20 +12,21 @@ class Solution {
     $answer = -1;
 
     $rotateIndex = $this->getRotateIndex($nums);
-    if ($nums[$finish] > $target) {
+    if (count($nums) == 1 ) {
+      if($nums[0] == $target) {
+        return 0;
+      }
+    } elseif ($rotateIndex == $finish) {
+    } elseif ($nums[$finish] > $target) {
       $start = $rotateIndex + 1;
     } else {
       $finish = $rotateIndex;
     }
 
-    if (count($nums) == 1 ) {
-      if($nums[0] == $target) {
-        return 0;
-      }
-    }
-
+    echo $start . ' ' . $middle . ' ' . $finish . "\n";
     while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
+
       if ($nums[$middle] == $target) {
         $answer = $middle;
         break;
