@@ -15,7 +15,20 @@ class Solution {
    * @return Integer
    */
   public function getRotateIndex($nums) {
-    $index = 0;
+    $start = 0;
+    $finish = count($nums) - 1;
+    $middle = 0;
+    $index = $finish;
+
+    while ($start < $finish) {
+      $middle = $start + floor(($finish - $start) / 2);
+      if ($nums[$middle] > $nums[$finish]) {
+        $index = $middle;
+        $start = $middle + 1;
+      } else {
+        $finish = $middle;
+      }
+    }
     return $index;
   }
 }
@@ -28,7 +41,7 @@ echo "Running getRotateIndex tests...\n\n";
 $getRotateIndexTestCases = [
   [
     'nums' => [4, 5, 6, 7, 0, 1, 2],
-    'expected' => 4,
+    'expected' => 3,
     'description' => 'Test 1'
   ],
 ];
