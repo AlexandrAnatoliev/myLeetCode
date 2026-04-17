@@ -9,7 +9,7 @@ class Solution {
     $start = 0;
     $finish = count($nums) - 1;
     $middle = 0;
-    $answer = 0;
+    $answer = -1;
 
     $rotateIndex = $this->getRotateIndex($nums);
     if ($nums[$finish] > $target) {
@@ -20,7 +20,6 @@ class Solution {
 
     while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
-      $answer = $start;
       if ($nums[$middle] == $target) {
         $answer = $middle;
         break;
@@ -28,7 +27,6 @@ class Solution {
         $finish = $middle;
       } else {
         $start = $middle + 1;
-        $answer = $start;
       }
     }
 
@@ -107,6 +105,12 @@ $searchTestCases = [
     'target' => 0,
     'expected' => 4,
     'description' => 'Example 1'
+  ],
+  [
+    'nums' => [4, 5, 6, 7, 0, 1, 2],
+    'target' => 3,
+    'expected' => -1,
+    'description' => 'Example 2'
   ],
 ];
 
