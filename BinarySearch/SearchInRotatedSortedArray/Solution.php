@@ -29,7 +29,7 @@ class Solution {
 
     while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
-//       echo $start . ' ' . $middle . ' ' . $finish . "\n";
+      echo $start . ' ' . $middle . ' ' . $finish . "\n";
 
       if ($nums[$middle] == $target) {
         $answer = $middle;
@@ -161,6 +161,12 @@ $searchTestCases = [
     'target' => 5,
     'expected' => 2,
     'description' => 'Example 8'
+  ],
+  [
+    'nums' => [3, 5, 1],
+    'target' => 1,
+    'expected' => 2,
+    'description' => 'Example 9'
   ],
 ];
 
