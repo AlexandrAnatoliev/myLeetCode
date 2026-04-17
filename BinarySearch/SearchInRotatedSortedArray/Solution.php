@@ -18,6 +18,12 @@ class Solution {
       $finish = $rotateIndex;
     }
 
+    if (count($nums) == 1 ) {
+      if($nums[0] == $target) {
+        return 0;
+      }
+    }
+
     while ($start < $finish) {
       $middle = $start + floor(($finish - $start) / 2);
       if ($nums[$middle] == $target) {
@@ -120,7 +126,7 @@ $searchTestCases = [
   [
     'nums' => [1],
     'target' => 1,
-    'expected' => 1,
+    'expected' => 0,
     'description' => 'Example 4'
   ],
 ];
