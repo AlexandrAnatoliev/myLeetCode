@@ -8,7 +8,7 @@
 * [Sqrt(x)](BinarySearch/SQRTx/README.md)
 * [Search in rotated sorted array](BinarySearch/SearchInRotatedSortedArray/README.md)
 * [Peak index in mountain array](BinarySearch/PeakIndexInMountainArray/README.md)
-* Find first and last position in sorted array
+* [Find first and last position in sorted array] (FindFirstAndLastPositionOfElementInSortedArray/README.md)
 * Search a 2D matrix
 * Search a 2D matrix 2
 
