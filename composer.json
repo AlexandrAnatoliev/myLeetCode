@@ -2,7 +2,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "App2\\": "BinarySearch/src/"
+            "App2\\": "BinarySearch/src/",
+            "App3\\": "BinarySearch/FindFirstAndLastPositionOfElementInSortedArray/src/"
         }
     },
     "require-dev": {

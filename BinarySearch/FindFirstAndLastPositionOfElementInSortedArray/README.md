@@ -32,5 +32,9 @@ Output: [-1,-1]
 
 #### Run tests
 ```
-> sudo /opt/lampp/bin/php Solution.php 
+> composer dump-autoload
+```
+
+```
+ > ./vendor/bin/phpunit BinarySearch/FindFirstAndLastPositionOfElementInSortedArray/tests
 ```
