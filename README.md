@@ -1,6 +1,12 @@
 # Roadmap по алгоритмам 
 * прочитать теорию -> решать задачи
 
+запуск тестов:
+```
+composer dump-autoload
+./vendor/bin/phpunit tests
+```
+
 ### Бинарный поиск
 * [First bad version](BinarySearch/FirstBadVersion/README.md)
 * [Valid perfect square](BinarySearch/ValidPerfectSquare/README.md)
