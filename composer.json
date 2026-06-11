@@ -1,0 +1,6 @@
+{
+    "name": "myvendor/myproject",
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
