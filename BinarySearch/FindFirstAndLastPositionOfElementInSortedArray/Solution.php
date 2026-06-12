@@ -31,7 +31,7 @@ class Solution {
       } elseif($nums[$middle] > $target) {
         $finish = $middle;
       } else {
-        $start = $middle;
+        $start = $middle + 1;
       }
     }
     return -1;
