@@ -3,7 +3,8 @@
         "psr-4": {
             "App\\": "src/",
             "App2\\": "BinarySearch/src/",
-            "App3\\": "BinarySearch/FindFirstAndLastPositionOfElementInSortedArray/src/"
+            "App3\\": "BinarySearch/FindFirstAndLastPositionOfElementInSortedArray/src/",
+            "BinarySearch1\\": "BinarySearch/FindFirstAndLastPositionOfElementInSortedArray/"
         }
     },
     "require-dev": {

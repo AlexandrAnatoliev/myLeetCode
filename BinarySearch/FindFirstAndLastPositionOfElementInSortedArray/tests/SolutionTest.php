@@ -1,18 +1,17 @@
 <?php
 use PHPUnit\Framework\TestCase;
-use App3\Calculator;
+use BinarySearch1\Solution;
 
 class SolutionTest extends TestCase
 {
-    public function testAdd()
+    public function testSearchRange()
     {
-        $calc = new Calculator();
-        $this->assertEquals(5, $calc->add(2, 3));
+        $solution = new Solution();
+        $nums = [5,7,7,8,8,10];
+        $output = [3,4];
+        $this->assertEquals(
+          $output,
+          $solution->searchRange($nums, 8));
     }
 
-    public function testAddWithNegative()
-    {
-        $calc = new Calculator();
-        $this->assertEquals(0, $calc->add(-1, 1));
-    }
 }
