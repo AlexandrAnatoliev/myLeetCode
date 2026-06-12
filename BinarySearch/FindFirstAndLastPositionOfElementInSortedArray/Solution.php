@@ -1,3 +1,6 @@
+<?php
+namespace BinarySearch1;
+
 class Solution {
 
     /**
@@ -6,6 +9,7 @@ class Solution {
      * @return Integer[]
      */
     function searchRange($nums, $target) {
+      return [1, 1];
         
     }
 }
