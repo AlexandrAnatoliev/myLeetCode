@@ -24,6 +24,10 @@ class Solution {
     $finish = count($nums) - 1;
     $middle = 0;
 
+    if($nums[$finish] == $target) {
+      return $finish;
+    }
+
     while($start < $finish) {
       $middle = $start + (int)(($finish - $start) / 2);
       if($nums[$middle] == $target) {
