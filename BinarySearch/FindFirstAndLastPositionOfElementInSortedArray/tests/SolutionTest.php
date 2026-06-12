@@ -23,5 +23,7 @@ class SolutionTest extends TestCase
       0, $solution->getTargetIndex($nums, 1));
     $this->assertEquals(
       5, $solution->getTargetIndex($nums, 10));
+    $this->assertEquals(
+      -1, $solution->getTargetIndex($nums, 5));
   }
 }
