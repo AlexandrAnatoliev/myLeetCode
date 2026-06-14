@@ -9,6 +9,10 @@ class Solution {
    * @return Integer[]
    */
   function searchRange($nums, $target) {
+    $targetIndex = $this->getTargetIndex($nums, $target);
+    if($targetIndex == -1) {
+      return [-1, -1];
+    }
     return [1, 1];
       
   }

@@ -4,7 +4,7 @@ use BinarySearch1\Solution;
 
 class SolutionTest extends TestCase
 {
-  public function testSearchRange()
+  public function test1SearchRange()
   {
     $solution = new Solution();
     $nums = [5,7,7,8,8,10];
@@ -12,6 +12,16 @@ class SolutionTest extends TestCase
     $this->assertEquals(
       $output,
       $solution->searchRange($nums, 8));
+  }
+
+  public function test2SearchRange()
+  {
+    $solution = new Solution();
+    $nums = [5,7,7,8,8,10];
+    $output = [-1,-1];
+    $this->assertEquals(
+      $output,
+      $solution->searchRange($nums, 6));
   }
 
   public function testGetTargetIndex() {
