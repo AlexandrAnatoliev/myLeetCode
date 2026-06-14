@@ -32,7 +32,7 @@ class Solution {
 
     while($start < $finish) {
       $middle = $start + (int)(($finish - $start) / 2);
-      if(($matrix[$middle][0] >= $target) and
+      if(($matrix[$middle][0] <= $target) and
       $matrix[$middle][count($matrix[$middle]) - 1] <= $target) {
         return $middle;
       } elseif($matrix[$middle][0] > $target) {
