@@ -13,7 +13,18 @@ class Solution {
     if($targetIndex == -1) {
       return [-1, -1];
     }
-    return [1, 1];
+
+    $startPos = $targetIndex;
+    $endPos   = $targetIndex;
+    $finish = count($nums) - 1;
+    while($startPos > 0 and $nums[$startPos - 1] == $target) {
+      $startPos = $startPos - 1;
+    }
+    while($endPos < $finish and $nums[$endPos + 1] == $target) {
+      $endPos = $endPos + 1;
+    }
+
+    return [$startPos, $endPos];
       
   }
 
