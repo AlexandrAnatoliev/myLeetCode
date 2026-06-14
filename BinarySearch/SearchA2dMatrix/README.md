@@ -39,7 +39,7 @@ Output: false
 * `m == matrix.length`
 * `n == matrix[i].length`
 * `1 <= m, n <= 100`
-* `-10^4 <= matrix[i][j], target <= 10^9`
+* `-10^4 <= matrix[i][j], target <= 10^4`
 
 #### Run tests
 ```

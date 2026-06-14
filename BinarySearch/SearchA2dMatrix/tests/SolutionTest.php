@@ -17,4 +17,18 @@ class SolutionTest extends TestCase
       $output,
       $solution->searchMatrix($matrix, 3));
   }
+
+  public function testGetRowIndex()
+  {
+    $solution = new Solution();
+    $matrix = [
+      [1,3,5,7],
+      [10,11,16,20],
+      [23,30,34,60]
+    ]; 
+    $output = 0;
+    $this->getRowIndex(
+      $output,
+      $solution->searchMatrix($matrix, 3));
+  }
 }
