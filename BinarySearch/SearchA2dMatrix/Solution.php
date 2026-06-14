@@ -11,4 +11,13 @@ class Solution {
   function searchMatrix($matrix, $target) {
     return false;
   }
+
+  /**
+   * @param Integer[][] $matrix
+   * @param Integer $target
+   * @return Integer
+   */
+  function getRowIndex($matrix, $target) {
+    return -1;
+  }
 }

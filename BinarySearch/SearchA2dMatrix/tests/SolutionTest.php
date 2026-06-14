@@ -27,8 +27,8 @@ class SolutionTest extends TestCase
       [23,30,34,60]
     ]; 
     $output = 0;
-    $this->getRowIndex(
+    $this->assertEquals(
       $output,
-      $solution->searchMatrix($matrix, 3));
+      $solution->getRowIndex($matrix, 3));
   }
 }
