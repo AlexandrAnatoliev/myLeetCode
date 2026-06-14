@@ -26,9 +26,11 @@ class SolutionTest extends TestCase
       [10,11,16,20],
       [23,30,34,60]
     ]; 
-    $output = 0;
     $this->assertEquals(
-      $output,
-      $solution->getRowIndex($matrix, 3));
+      -1, $solution->getRowIndex([[]], 10));
+    $this->assertEquals(
+      1, $solution->getRowIndex($matrix, 10));
+    $this->assertEquals(
+      0, $solution->getRowIndex($matrix, 3));
   }
 }
