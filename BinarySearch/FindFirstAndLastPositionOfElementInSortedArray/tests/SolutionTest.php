@@ -24,6 +24,16 @@ class SolutionTest extends TestCase
       $solution->searchRange($nums, 6));
   }
 
+  public function test3SearchRange()
+  {
+    $solution = new Solution();
+    $nums = [];
+    $output = [-1,-1];
+    $this->assertEquals(
+      $output,
+      $solution->searchRange($nums, 0));
+  }
+
   public function testGetTargetIndex() {
     $solution = new Solution();
     $nums = [1,2,3,6,7,10];
@@ -39,5 +49,7 @@ class SolutionTest extends TestCase
       -1, $solution->getTargetIndex($nums, 10**9));
     $this->assertEquals(
       -1, $solution->getTargetIndex($nums, -(10**9)));
+    $this->assertEquals(
+      -1, $solution->getTargetIndex([], 0));
   }
 }

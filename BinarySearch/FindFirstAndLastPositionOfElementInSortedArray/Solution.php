@@ -39,6 +39,10 @@ class Solution {
     $finish = count($nums) - 1;
     $middle = 0;
 
+    if(count($nums) == 0) {
+      return -1;
+    }
+
     if($nums[$finish] == $target) {
       return $finish;
     }
