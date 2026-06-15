@@ -50,6 +50,25 @@ class Solution {
    * @return Boolean
    */
   public function isTarget($row, $target) {
+    $start  = 0;
+    $middle = 0;
+    $finish = count($row) - 1;
+
+    if(count($row) == 0) {
+      return false;
+    }
+
+    while($start < $finish) {
+      $middle = $start + (int)(($finish - $start) / 2);
+      if($row[$middle] == $target) {
+        return true;
+      } elseif($row[$middle] > $target) {
+        $finish = $middle;
+      } else {
+        $start = $middle + 1;
+      }
+    }
+
     return false;
   }
 }
