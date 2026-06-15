@@ -1,0 +1,61 @@
+<?php
+use PHPUnit\Framework\TestCase;
+use BinarySearch2\Solution;
+
+class SolutionTest extends TestCase
+{
+  public function test1SearchRange()
+  {
+    $solution = new Solution();
+    $matrix = [
+      [1,3,5,7],
+      [10,11,16,20],
+      [23,30,34,60]
+    ]; 
+    $this->assertEquals(true,
+      $solution->searchMatrix($matrix, 3));
+    $this->assertEquals(false,
+      $solution->searchMatrix($matrix, 13));
+  }
+
+  public function testGetRowIndex()
+  {
+    $solution = new Solution();
+    $matrix = [
+      [1,3,5,7],
+      [10,11,16,20],
+      [23,30,34,60]
+    ]; 
+    $this->assertEquals(
+      0, $solution->getRowIndex([[1]], 1));
+    $this->assertEquals(
+      2, $solution->getRowIndex($matrix, 23));
+    $this->assertEquals(
+      1, $solution->getRowIndex($matrix, 20));
+    $this->assertEquals(
+      1, $solution->getRowIndex($matrix, 10));
+    $this->assertEquals(
+      0, $solution->getRowIndex($matrix, 3));
+    $this->assertEquals(
+      -1, $solution->getRowIndex($matrix, 10**4));
+    $this->assertEquals(
+      -1, $solution->getRowIndex($matrix, -(10**4)));
+  }
+
+  public function testIsTarget() {
+    $solution = new Solution();
+    $row      = [1,3,5,7];
+    $this->assertEquals(
+      true, $solution->isTarget($row, 3));
+    $this->assertEquals(
+      false, $solution->isTarget($row, 4));
+    $this->assertEquals(
+      true, $solution->isTarget($row, 1));
+    $this->assertEquals(
+      true, $solution->isTarget($row, 7));
+    $this->assertEquals(
+      false, $solution->isTarget($row, 10**4));
+    $this->assertEquals(
+      false, $solution->isTarget($row, -(10**4)));
+  }
+}
