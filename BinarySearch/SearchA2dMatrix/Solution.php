@@ -26,15 +26,16 @@ class Solution {
     $middle = 0;
     $finish = count($matrix) - 1;
 
-    if(count($matrix[0]) == 0) {
+    if(count($matrix[0]) == 0)
+    {
       return -1;
     }
 
-    if($matrix[0][0] >= $target) {
+    if($matrix[0][0] > $target) {
       return -1;
     }
 
-    if($matrix[$finish][count($matrix[$finish]) - 1] <= $target) {
+    if($matrix[$finish][count($matrix[$finish]) - 1] < $target) {
       return -1;
     }
 
