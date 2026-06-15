@@ -26,6 +26,14 @@ class Solution {
       return -1;
     }
 
+    if($matrix[0][0] >= $target) {
+      return -1;
+    }
+
+    if($matrix[$finish][count($matrix[$finish]) - 1] <= $target) {
+      return -1;
+    }
+
     if($matrix[$finish][0] <= $target) {
       return $finish;
     }
