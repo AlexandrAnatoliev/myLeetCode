@@ -37,4 +37,11 @@ class SolutionTest extends TestCase
     $this->assertEquals(
       0, $solution->getRowIndex($matrix, 3));
   }
+
+  public function testIsTarget() {
+    $solution = new Solution();
+    $row      = [1,3,5,7];
+    $this->assertEquals(
+      true, $solution->isTarget($row, 3));
+  }
 }

@@ -8,7 +8,7 @@ class Solution {
    * @param Integer $target
    * @return Boolean
    */
-  function searchMatrix($matrix, $target) {
+  public function searchMatrix($matrix, $target) {
     return false;
   }
 
@@ -17,7 +17,7 @@ class Solution {
    * @param Integer $target
    * @return Integer
    */
-  function getRowIndex($matrix, $target) {
+  public function getRowIndex($matrix, $target) {
     $start  = 0;
     $middle = 0;
     $finish = count($matrix) - 1;
@@ -42,5 +42,14 @@ class Solution {
       }
     }
     return -1;
+  }
+
+  /**
+   * @param Integer[] $row
+   * @param Integer $target
+   * @return Boolean
+   */
+  public function isTarget($row, $target) {
+    return false;
   }
 }
