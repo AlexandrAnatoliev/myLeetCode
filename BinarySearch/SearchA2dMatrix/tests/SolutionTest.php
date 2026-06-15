@@ -43,5 +43,7 @@ class SolutionTest extends TestCase
     $row      = [1,3,5,7];
     $this->assertEquals(
       true, $solution->isTarget($row, 3));
+    $this->assertEquals(
+      false, $solution->isTarget($row, 4));
   }
 }
