@@ -12,10 +12,10 @@ class SolutionTest extends TestCase
       [10,11,16,20],
       [23,30,34,60]
     ]; 
-    $output = true;
-    $this->assertEquals(
-      $output,
+    $this->assertEquals(true,
       $solution->searchMatrix($matrix, 3));
+    $this->assertEquals(false,
+      $solution->searchMatrix($matrix, 13));
   }
 
   public function testGetRowIndex()
