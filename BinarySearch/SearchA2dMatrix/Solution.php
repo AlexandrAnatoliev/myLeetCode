@@ -9,7 +9,11 @@ class Solution {
    * @return Boolean
    */
   public function searchMatrix($matrix, $target) {
-    return false;
+    $rowIndex = $this->getRowIndex($matrix, $target);
+    if($rowIndex == -1) {
+      return false;
+    }
+    return $this->isTarget($matrix[$rowIndex], $target);
   }
 
   /**
