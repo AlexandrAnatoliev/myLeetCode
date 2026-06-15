@@ -58,6 +58,10 @@ class Solution {
       return false;
     }
 
+    if($row[$finish] == $target) {
+      return true;
+    }
+
     while($start < $finish) {
       $middle = $start + (int)(($finish - $start) / 2);
       if($row[$middle] == $target) {

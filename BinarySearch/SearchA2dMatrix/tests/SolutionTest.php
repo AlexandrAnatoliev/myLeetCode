@@ -47,5 +47,7 @@ class SolutionTest extends TestCase
       false, $solution->isTarget($row, 4));
     $this->assertEquals(
       true, $solution->isTarget($row, 1));
+    $this->assertEquals(
+      true, $solution->isTarget($row, 7));
   }
 }
