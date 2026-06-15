@@ -51,5 +51,7 @@ class SolutionTest extends TestCase
       true, $solution->isTarget($row, 7));
     $this->assertEquals(
       false, $solution->isTarget($row, 10**4));
+    $this->assertEquals(
+      false, $solution->isTarget($row, -(10**4)));
   }
 }
