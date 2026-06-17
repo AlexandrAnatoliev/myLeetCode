@@ -18,4 +18,11 @@ class SolutionTest extends TestCase
       $solution->searchMatrix($matrix, 5));
   }
 
+  public function testGetTargetIndexInRow()
+  {
+    $solution = new Solution();
+    $row = [1, 4, 7, 11, 15];
+    $this->assertEquals([true, 1],
+      $solution->getTargetIndex($row, 4));
+  }
 }
