@@ -27,12 +27,18 @@ class SolutionTest extends TestCase
       'index'     => 3,
     ];
     $this->assertEquals($answer1,
-      $solution->getTargetIndex($row, 4, 11));
+    $solution->getTargetIndex($row, 4, 11));
     $answer2 = [
       'searched'  => false,
       'index'     => 3,
     ];
     $this->assertEquals($answer2,
       $solution->getTargetIndex($row, 4, 10));
+    $answer3 = [
+      'searched'  => true,
+      'index'     => 0,
+    ];
+    $this->assertEquals($answer3,
+    $solution->getTargetIndex($row, 4, 1));
   }
 }
