@@ -22,11 +22,17 @@ class SolutionTest extends TestCase
   {
     $solution = new Solution();
     $row = [1, 4, 7, 11, 15];
-    $answer = [
+    $answer1 = [
       'searched'  => true,
       'index'     => 3,
     ];
-    $this->assertEquals($answer,
+    $this->assertEquals($answer1,
       $solution->getTargetIndex($row, 4, 11));
+    $answer2 = [
+      'searched'  => false,
+      'index'     => 3,
+    ];
+    $this->assertEquals($answer2,
+      $solution->getTargetIndex($row, 4, 10));
   }
 }
