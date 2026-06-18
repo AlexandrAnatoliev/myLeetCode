@@ -30,6 +30,12 @@ class Solution {
     $start  = 0;
     $middle = 0;
 
+    if($row[0] == $target) {
+      $answer['searched'] = true;
+      $answer['index'] = 0;
+      return $answer;
+    }
+
     while($start < $answer['index']) {
       $middle = $start + (int)(($endSearch - $start) / 2);
       if($row[$middle] == $target) {
