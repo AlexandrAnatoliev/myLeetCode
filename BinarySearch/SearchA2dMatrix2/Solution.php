@@ -9,6 +9,21 @@ class Solution {
    * @return Boolean
    */
   public function searchMatrix($matrix, $target) {
+    $endSearch = count($matrix[0]) - 1;
+    $answer = [
+      'searched'  => false,
+      'index'     => $endSearch,
+    ];
+
+//    foreach($matrix as $row) {
+  //    $answer = $this->getTargetIndex(
+    //    $row, 
+      //  $answer['index'], $target);
+//      if($answer['searched' == true]) {
+  //      break;
+    //  }
+   // } 
+    return $answer['searched'];
   }
 
   /**
