@@ -30,6 +30,10 @@ class Solution {
     $start  = 0;
     $middle = 0;
 
+    if($row[0] > $target) {
+      $answer['index'] = 0;
+      return $answer;
+    }
     if($row[0] == $target) {
       $answer['searched'] = true;
       $answer['index'] = 0;
@@ -38,7 +42,6 @@ class Solution {
 
     if($row[$endSearch] == $target) {
       $answer['searched'] = true;
-      $answer['index'] = $endSearch;
       return $answer;
     }
 
