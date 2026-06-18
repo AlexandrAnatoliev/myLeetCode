@@ -46,5 +46,17 @@ class SolutionTest extends TestCase
     ];
     $this->assertEquals($answer4,
       $solution->getTargetIndex($row, 4, 15));
+    $answer5 = [
+      'searched'  => false,
+      'index'     => 4,
+    ];
+    $this->assertEquals($answer5,
+      $solution->getTargetIndex($row, 4, 10 ** 9));
+    $answer6 = [
+      'searched'  => false,
+      'index'     => 4,
+    ];
+    $this->assertEquals($answer6,
+      $solution->getTargetIndex($row, 4, -(10 ** 9)));
   }
 }
