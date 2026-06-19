@@ -16,6 +16,8 @@ class SolutionTest extends TestCase
     ]; 
     $this->assertEquals(true,
       $solution->searchMatrix($matrix, 5));
+    $this->assertEquals(false,
+      $solution->searchMatrix($matrix, 20));
   }
 
   public function testGetTargetIndexInRow()
