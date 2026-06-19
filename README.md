@@ -14,9 +14,9 @@ composer dump-autoload
 * [Sqrt(x)](BinarySearch/SQRTx/README.md)
 * [Search in rotated sorted array](BinarySearch/SearchInRotatedSortedArray/README.md)
 * [Peak index in mountain array](BinarySearch/PeakIndexInMountainArray/README.md)
-* [Find first and last position in sorted array] (FindFirstAndLastPositionOfElementInSortedArray/README.md)
+* [Find first and last position in sorted array](FindFirstAndLastPositionOfElementInSortedArray/README.md)
 * [Search a 2D matrix](SearchA2dMatrix/README.md)
-* Search a 2D matrix 2
+* [Search a 2D matrix 2](SearchA2dMatrix2/README.md)
 
 ### Два указателя
 Эти задачи чаще всего встречаются на алгоритмических собеседованиях.

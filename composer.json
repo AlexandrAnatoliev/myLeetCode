@@ -5,7 +5,8 @@
             "App2\\": "BinarySearch/src/",
             "App3\\": "BinarySearch/FindFirstAndLastPositionOfElementInSortedArray/src/",
             "BinarySearch1\\": "BinarySearch/FindFirstAndLastPositionOfElementInSortedArray/",
-            "BinarySearch2\\": "BinarySearch/SearchA2dMatrix/"        
+            "BinarySearch2\\": "BinarySearch/SearchA2dMatrix/", 
+            "BinarySearch3\\": "BinarySearch/SearchA2dMatrix2/"        
         }
     },
     "require-dev": {
