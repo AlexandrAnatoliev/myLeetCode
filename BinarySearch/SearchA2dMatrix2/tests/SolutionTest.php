@@ -13,7 +13,7 @@ class SolutionTest extends TestCase
       [3, 6, 9, 16, 22],
       [10,13,14,17, 24],
       [18,21,23,26, 30]
-    ]; 
+    ];
     $this->assertEquals(true,
       $solution->searchMatrix($matrix, 5));
     $this->assertEquals(false,
@@ -77,8 +77,7 @@ class SolutionTest extends TestCase
       [3, 6, 9, 16, 22],
       [10,13,14,17, 24],
       [18,21,23,26, 30]
-    ]; 
-    $endSearch = count($matrix[0]) - 1;
+    ];
     $answer = [
       'searched'  => false,
       'index'     => 2,

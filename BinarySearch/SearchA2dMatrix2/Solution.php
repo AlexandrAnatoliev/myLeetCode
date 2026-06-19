@@ -20,7 +20,7 @@ class Solution {
       if($answer['searched']) {
         break;
       }
-    } 
+    }
     return $answer['searched'];
   }
 
@@ -31,7 +31,7 @@ class Solution {
    * @return Array
    */
   public function getTargetIndex(
-    $row, 
+    $row,
     $endSearch,
     $target) {
 
