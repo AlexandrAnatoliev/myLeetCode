@@ -85,5 +85,8 @@ class SolutionTest extends TestCase
     $row = [1, 4, 7, 11, 15];
     $this->assertEquals($answer,
       $solution->getTargetIndex($row, 3, 5));
+    $this->assertEquals($answer,
+      $solution->getTargetIndex(
+        $matrix[0], 3, 5));
   }
 }
