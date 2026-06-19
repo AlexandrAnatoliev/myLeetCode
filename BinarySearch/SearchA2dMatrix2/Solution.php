@@ -10,13 +10,8 @@ class Solution {
    */
   public function searchMatrix($matrix, $target) {
     $endSearch = count($matrix[0]) - 1;
-    $answer = [
-      'searched'  => false,
-      'index'     => $endSearch,
-    ];
-
     $answer = $this->getTargetIndex(
-    $matrix[0], $endSearch, $target);
+      $matrix[0], $endSearch, $target);
 
     foreach($matrix as $row) {
       $answer = $this->getTargetIndex(
