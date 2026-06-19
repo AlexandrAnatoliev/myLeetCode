@@ -65,4 +65,27 @@ class SolutionTest extends TestCase
     $this->assertEquals($answer7,
       $solution->getTargetIndex($row, 0,  9));
   }
+
+   public function test2GetTargetIndexInRow()
+  {
+    $solution = new Solution();
+    $matrix = [
+      [1, 4, 7, 11, 15],
+      [2, 5, 8, 12, 19],
+      [3, 6, 9, 16, 22],
+      [10,13,14,17, 24],
+      [18,21,23,26, 30]
+    ]; 
+    $endSearch = count($matrix[0]) - 1;
+    $answer = [
+      'searched'  => false,
+      'index'     => $endSearch,
+    ];
+
+    $row = [1, 4, 7, 11, 15];
+    $answer = $solution->getTargetIndex(
+    $row, 3, 5);
+    $this->assertEquals($answer,
+      $solution->getTargetIndex($row, 3, 5));
+  }
 }

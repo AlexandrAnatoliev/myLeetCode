@@ -18,7 +18,7 @@ class Solution {
 
     $row = [1, 4, 7, 11, 15];
     $answer = $this->getTargetIndex(
-    $row, $answer['index'], $target);
+    $row, 3, $target);
 
 //    foreach($matrix as $row) {
   //    $answer = $this->getTargetIndex(
