@@ -15,9 +15,9 @@ class Solution {
 
     foreach($matrix as $row) {
       $answer = $this->getTargetIndex(
-        $row, 
+        $row,
         $answer['index'], $target);
-      if($answer['searched'] == true) {
+      if($answer['searched']) {
         break;
       }
     } 
