@@ -79,12 +79,10 @@ class SolutionTest extends TestCase
     $endSearch = count($matrix[0]) - 1;
     $answer = [
       'searched'  => false,
-      'index'     => $endSearch,
+      'index'     => 2,
     ];
 
     $row = [1, 4, 7, 11, 15];
-    $answer = $solution->getTargetIndex(
-    $row, 3, 5);
     $this->assertEquals($answer,
       $solution->getTargetIndex($row, 3, 5));
   }
