@@ -54,3 +54,7 @@ It does not matter what you leave beyond the returned k
 * `nums` is a non-decreasing array.
 
 #### Run tests
+```
+ g++ -std=c++14 test_solution.cpp Solution.cpp -lgtest -lgtest_main -pthread -o test_solution
+ ./test_solution
+ ```
