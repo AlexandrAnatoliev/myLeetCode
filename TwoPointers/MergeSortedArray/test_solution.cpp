@@ -17,3 +17,16 @@ TEST(SolutionTest, example1) {
   }
 }
 
+TEST(SolutionTest, example2) {
+  Solution solution;
+  vector<int> nums1 = {1};
+  int m = 1;
+  vector<int> nums2 = {};
+  int n = 0;
+  vector<int> output  = {1}; 
+
+  solution.merge(nums1, m, nums2, n);
+  for (int i = 0; i < n + m; i++) {
+    EXPECT_EQ(nums1[i], output[i]);
+  }
+}
