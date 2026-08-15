@@ -22,7 +22,7 @@ composer dump-autoload
 Эти задачи чаще всего встречаются на алгоритмических собеседованиях.
 * [Remove duplicates from sorted array](TwoPointers/RemoveDuplicatesFromSortedArray/README.md)
 * [Merge sorted array](TwoPointers/MergeSortedArray/README.md)
-* Intersection of two arrays 2
+* [Intersection of two arrays 2](TwoPointers/IntersectionOfTwoArrays2/README.md)
 * Two sum 2
 * 3 sum
 * 4 sum
