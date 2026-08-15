@@ -2,4 +2,5 @@
 vendor/
 tests/test_calc
 tests/test_check
-TwoPoints/RemoveDuplicatesFromSortedArray/test_solution
+TwoPointers/RemoveDuplicatesFromSortedArray/test_solution
+TwoPointers/MergeSortedArray/test_solution
