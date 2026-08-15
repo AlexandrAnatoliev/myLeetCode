@@ -9,7 +9,13 @@ class Solution {
       int ptr1 = 0;
       int ptr2 = 0;
       while (ptr1 < m || ptr2 < n) {
-        if (ptr1 < m && nums1[ptr1] < nums2[ptr2]) {
+        if (m == 0) {
+          output.push_back(nums2[ptr2]);
+          ptr2++;
+        } else if (n == 0) {
+          output.push_back(nums1[ptr1]);
+          ptr1++;
+        } else if (ptr1 < m && nums1[ptr1] < nums2[ptr2]) {
           output.push_back(nums1[ptr1]);
           ptr1++;
         } else {
