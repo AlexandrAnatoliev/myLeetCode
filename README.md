@@ -21,7 +21,7 @@ composer dump-autoload
 ### Два указателя
 Эти задачи чаще всего встречаются на алгоритмических собеседованиях.
 * [Remove duplicates from sorted array](TwoPoints/RemoveDuplicatesFromSortedArray/README.md)
-* Merge sorted array
+* [Merge sorted array](TwoPoints/MergeSortedArray/README.md)
 * Intersection of two arrays 2
 * Two sum 2
 * 3 sum
