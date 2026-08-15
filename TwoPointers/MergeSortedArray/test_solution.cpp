@@ -44,3 +44,17 @@ TEST(SolutionTest, example3) {
     EXPECT_EQ(nums1[i], output[i]);
   }
 }
+
+TEST(SolutionTest, test4) {
+  Solution solution;
+  vector<int> nums1 = {2,0};
+  int m = 1;
+  vector<int> nums2 = {1};
+  int n = 1;
+  vector<int> output  = {1,2}; 
+
+  solution.merge(nums1, m, nums2, n);
+  for (int i = 0; i < n + m; i++) {
+    EXPECT_EQ(nums1[i], output[i]);
+  }
+}
