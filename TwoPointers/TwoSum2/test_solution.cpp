@@ -54,3 +54,16 @@ TEST(SolutionTest, test4) {
     EXPECT_EQ(output[i], expectOutput[i]);
   }
 }
+
+TEST(SolutionTest, test5) {
+  Solution solution;
+  vector<int> numbers = {3,24,50,79,88,150,345};
+  int target = 200;
+  vector<int> expectOutput  = {3,6}; 
+
+  vector<int> output = solution.twoSum(numbers, target);
+  int size = output.size();
+  for (int i = 0; i < size; i++) {
+    EXPECT_EQ(output[i], expectOutput[i]);
+  }
+}
