@@ -17,7 +17,7 @@ class Solution {
           output[0] = ptr1 + 1;
           output[1] = ptr2 + 1;
           break;
-        } else if (ptr2 >= size) {
+        } else if (ptr2 >= size - 1) {
           ptr1++; 
         } else if (numbers[ptr1] + numbers[ptr2] < target) {
           ptr2++;
