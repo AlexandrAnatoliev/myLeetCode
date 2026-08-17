@@ -23,7 +23,7 @@ composer dump-autoload
 * [Remove duplicates from sorted array](TwoPointers/RemoveDuplicatesFromSortedArray/README.md)
 * [Merge sorted array](TwoPointers/MergeSortedArray/README.md)
 * [Intersection of two arrays 2](TwoPointers/IntersectionOfTwoArrays2/README.md)
-* Two sum 2
+* [Two sum 2](TwoPointers/TwoSum2/README.md)
 * 3 sum
 * 4 sum
 * Sort colors
