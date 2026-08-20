@@ -28,6 +28,21 @@ struct TreeNode {
 class Solution {
   public:
     bool findTarget(TreeNode* root, int k) {
+      vector<int> arr = {};
+      inOrder(root, arr);
+      int size = arr.size();
+      int ptr1 = 0;
+      int ptr2 = size - 1;
+
+      while (ptr1 < ptr2) {
+        if (arr[ptr1] + arr[ptr2] == k) {
+          return true;
+        } else if (arr[ptr1] + arr[ptr2] < k) {
+          ptr1++;
+        } else {
+          ptr2--;
+        }
+      }
       return false;
     }
 
