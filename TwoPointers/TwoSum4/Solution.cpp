@@ -10,6 +10,9 @@
  * };
  */
 
+#include <vector>
+using namespace std;
+
 struct TreeNode {
   int val;
   TreeNode *left;
@@ -26,5 +29,11 @@ class Solution {
   public:
     bool findTarget(TreeNode* root, int k) {
       return false;
+    }
+
+  public:
+    vector<int> inOrder( TreeNode* node) {
+      vector<int> output = {};
+      return output;
     }
 };
