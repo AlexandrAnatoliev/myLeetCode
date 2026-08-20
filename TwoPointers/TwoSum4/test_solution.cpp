@@ -1,5 +1,4 @@
 #include <gtest/gtest.h>
-#include <algorithm>
 #include "Solution.cpp"
 using namespace std;
 
@@ -35,7 +34,6 @@ TEST(SolutionTest, test3) {
 
   vector<int> output = {};
   solution.inOrder(node5, output);
-  sort(output.begin(), output.end());
   int size = output.size();
   for (int i = 0; i < size; i++) {
     EXPECT_EQ(output[i], expectOutput[i]);
