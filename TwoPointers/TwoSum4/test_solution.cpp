@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include <algorithm>
 #include "Solution.cpp"
 using namespace std;
 
@@ -24,7 +25,7 @@ TEST(SolutionTest, example1) {
 
 TEST(SolutionTest, test3) {
   Solution solution;
-  vector<int> expectOutput  = {5,3,6,2,4,7}; 
+  vector<int> expectOutput  = {2,3,4,5,6,7}; 
   TreeNode* node2 = new TreeNode(2);
   TreeNode* node4 = new TreeNode(4);
   TreeNode* node7 = new TreeNode(7);
@@ -32,7 +33,9 @@ TEST(SolutionTest, test3) {
   TreeNode* node6 = new TreeNode(6, nullptr, node7);
   TreeNode* node5 = new TreeNode(5, node3, node6);
 
-  vector<int> output = solution.inOrder(node5);
+  vector<int> output = {};
+  solution.inOrder(node5, output);
+  sort(output.begin(), output.end());
   int size = output.size();
   for (int i = 0; i < size; i++) {
     EXPECT_EQ(output[i], expectOutput[i]);

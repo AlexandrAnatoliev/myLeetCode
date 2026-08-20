@@ -32,8 +32,12 @@ class Solution {
     }
 
   public:
-    vector<int> inOrder( TreeNode* node) {
-      vector<int> output = {};
-      return output;
+    void inOrder(TreeNode* node, vector<int>& res) {
+      if (!node) {
+        return;
+      }
+      inOrder(node->left, res);
+      res.push_back(node->val);
+      inOrder(node->right, res);
     }
 };
