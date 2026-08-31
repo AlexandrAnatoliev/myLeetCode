@@ -3,10 +3,10 @@
 #include <vector>
 using namespace std;
 
-TEST(SolutionTest, example1) {
+TEST(SolutionTest, test3) {
   Solution solution;
-  vector<int> nums = {2,0,2,1,1,0};
-  vector<int> expectOutput  = {0,0,1,1,2,2}; 
+  vector<int> nums = {2,0};
+  vector<int> expectOutput  = {0,2}; 
 
   solution.sortColors(nums);
   int size = nums.size();
@@ -15,10 +15,10 @@ TEST(SolutionTest, example1) {
   }
 }
 
-TEST(SolutionTest, test3) {
+TEST(SolutionTest, example1) {
   Solution solution;
-  vector<int> nums = {2,0};
-  vector<int> expectOutput  = {0,2}; 
+  vector<int> nums = {2,0,2,1,1,0};
+  vector<int> expectOutput  = {0,0,1,1,2,2}; 
 
   solution.sortColors(nums);
   int size = nums.size();
