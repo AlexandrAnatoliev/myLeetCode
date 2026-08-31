@@ -87,6 +87,18 @@ TEST(SolutionTest, test9) {
   }
 }
 
+TEST(SolutionTest, test10) {
+  Solution solution;
+  vector<int> nums = {2,0,2,1};
+  vector<int> expectOutput  = {0,1,2,2}; 
+
+  solution.sortColors(nums);
+  int size = nums.size();
+  for (int i = 0; i < size; i++) {
+    EXPECT_EQ(nums[i], expectOutput[i]);
+  }
+}
+
 TEST(SolutionTest, example1) {
   Solution solution;
   vector<int> nums = {2,0,2,1,1,0};
