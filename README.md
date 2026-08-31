@@ -25,8 +25,8 @@ composer dump-autoload
 * [Intersection of two arrays 2](TwoPointers/IntersectionOfTwoArrays2/README.md)
 * [Two sum 2](TwoPointers/TwoSum2/README.md)
 * 3 sum
-* 4 sum
-* Sort colors
+* [4 sum](TwoPointers/TwoSum4/README.md)
+* [Sort colors](TwoPointers/SortColors/README.md)
 * Move zeroes
 * Partition labels
 
