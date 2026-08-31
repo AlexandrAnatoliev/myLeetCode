@@ -17,8 +17,8 @@ TEST(SolutionTest, example1) {
 
 TEST(SolutionTest, test3) {
   Solution solution;
-  vector<int> nums = {1,0};
-  vector<int> expectOutput  = {0,1}; 
+  vector<int> nums = {2,0};
+  vector<int> expectOutput  = {0,2}; 
 
   solution.sortColors(nums);
   int size = nums.size();
