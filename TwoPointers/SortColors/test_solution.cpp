@@ -27,6 +27,43 @@ TEST(SolutionTest, test4) {
   }
 }
 
+TEST(SolutionTest, test5) {
+  Solution solution;
+  vector<int> nums = {2,0,2};
+  vector<int> expectOutput  = {0,2,2}; 
+
+  solution.sortColors(nums);
+  int size = nums.size();
+  for (int i = 0; i < size; i++) {
+    EXPECT_EQ(nums[i], expectOutput[i]);
+  }
+}
+
+TEST(SolutionTest, test6) {
+  Solution solution;
+  vector<int> nums = {1,0};
+  vector<int> expectOutput  = {0,1}; 
+
+  solution.sortColors(nums);
+  int size = nums.size();
+  for (int i = 0; i < size; i++) {
+    EXPECT_EQ(nums[i], expectOutput[i]);
+  }
+}
+
+TEST(SolutionTest, test7) {
+  Solution solution;
+  vector<int> nums = {0,1,0};
+  vector<int> expectOutput  = {0,0,1}; 
+
+  solution.sortColors(nums);
+  int size = nums.size();
+  for (int i = 0; i < size; i++) {
+    EXPECT_EQ(nums[i], expectOutput[i]);
+  }
+}
+
+
 TEST(SolutionTest, example1) {
   Solution solution;
   vector<int> nums = {2,0,2,1,1,0};
