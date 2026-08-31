@@ -19,6 +19,10 @@ class Solution {
           temp = nums[ptr0];
           nums[ptr0] = nums[ptr1];
           nums[ptr1] = temp; 
+        } else if(nums[ptr1] > nums[ptr2]) {
+          temp = nums[ptr1];
+          nums[ptr1] = nums[ptr2];
+          nums[ptr2] = temp; 
         } else if(ptr0 >= ptr1) {
           ptr1++;
         } else if(nums[ptr0] == 0) {
