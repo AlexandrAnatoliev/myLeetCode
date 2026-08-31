@@ -15,3 +15,15 @@ TEST(SolutionTest, example1) {
   }
 }
 
+TEST(SolutionTest, test3) {
+  Solution solution;
+  vector<int> nums = {1,0};
+  vector<int> expectOutput  = {0,1}; 
+
+  solution.sortColors(nums);
+  int size = nums.size();
+  for (int i = 0; i < size; i++) {
+    EXPECT_EQ(nums[i], expectOutput[i]);
+  }
+}
+
