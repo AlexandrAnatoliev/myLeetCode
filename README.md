@@ -27,7 +27,7 @@ composer dump-autoload
 * 3 sum
 * [4 sum](TwoPointers/TwoSum4/README.md)
 * [Sort colors](TwoPointers/SortColors/README.md)
-* Move zeroes
+* [Move zeroes](TwoPointers/MoveZeroes/README.md)
 * Partition labels
 
 ### Строки
