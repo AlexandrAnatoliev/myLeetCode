@@ -1,11 +1,21 @@
-# Roadmap по алгоритмам 
-* прочитать теорию -> решать задачи
+# Список решенных задач
 
-запуск тестов:
+## Roadmap по алгоритмам 
+
+### Notes:
+* перед решением задач - читать теорию
+* после родмапа по алгоритмам - родмап 
+задач Яндекс, Сбер и т.д.
+* запуск тестов php:
 ```
 composer dump-autoload
 ./vendor/bin/phpunit tests
 ```
+* запуск тестов php:
+```
+ g++ -std=c++14 test_solution.cpp Solution.cpp -lgtest -lgtest_main -pthread -o test_solution
+ ./test_solution
+ ```
 
 ### Бинарный поиск
 * [First bad version](BinarySearch/FirstBadVersion/README.md)
