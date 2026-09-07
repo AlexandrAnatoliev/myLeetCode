@@ -38,7 +38,7 @@ composer dump-autoload
 * [4 sum](TwoPointers/TwoSum4/README.md)
 * [Sort colors](TwoPointers/SortColors/README.md)
 * [Move zeroes](TwoPointers/MoveZeroes/README.md)
-* Partition labels
+* [Partition labels](TwoPointers/PartitionLabels/README.md)
 
 ### Строки
 * Roman to integer
