@@ -6,6 +6,16 @@ class Solution {
   public:
     vector<int> partitionLabels(string s) {
       vector<int> output = {};
+      vector<int> letterCount = getLetterCount(s);
+      int length = s.length();
+      int ptr = 0;
+
+      while(ptr < length) {
+        int label = getLabelLength(
+            s,letterCount,ptr);
+        ptr += label;
+        output.push_back(label);
+      }
       return output;
     }
 
