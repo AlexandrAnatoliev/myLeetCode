@@ -32,12 +32,17 @@ TEST(SolutionTest, test3) {
 TEST(SolutionTest, test4) {
   Solution solution;
   string s = "ababcc";
-  int expectOutput  = 4; 
+  int expectOutput1  = 4; 
+  int expectOutput2  = 2; 
   vector<int> letterCount = {2,2,2};
 
-  int output = solution.getLabelLength(
+  int output1 = solution.getLabelLength(
       s,letterCount,0);
-  EXPECT_EQ(output, expectOutput);
+  EXPECT_EQ(output1, expectOutput1);
+
+  int output2 = solution.getLabelLength(
+      s,letterCount,4);
+  EXPECT_EQ(output2, expectOutput2);
 }
 
 TEST(SolutionTest, test1) {
