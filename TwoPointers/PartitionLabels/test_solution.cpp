@@ -29,6 +29,15 @@ TEST(SolutionTest, test3) {
   }
 }
 
+TEST(SolutionTest, test4) {
+  Solution solution;
+  string s = "ababcc";
+  int expectOutput  = 4; 
+
+  int output = solution.getLabelLength(s,0);
+  EXPECT_EQ(output, expectOutput);
+}
+
 TEST(SolutionTest, test1) {
   Solution solution;
   string s = "ababcc";

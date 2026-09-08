@@ -24,4 +24,9 @@ class Solution {
       }
       return output;
     }
+
+  public:
+    int getLabelLength(string s, int start) {
+      return 0;
+    }
 };
