@@ -42,7 +42,7 @@ class Solution {
         int start) {
       bool fl_arr[26] = {};
       int length = s.length();
-      int ptr = start;
+      int ptr = 0;
       int cnt = 0;
 
       for(int i = start; i < length; i++) {
