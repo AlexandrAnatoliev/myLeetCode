@@ -9,6 +9,6 @@ class Solution {
 
   public:
     int getLetterIndex(char letter) {
-      return 0;
+      return int(letter) - 97;
     }
 };

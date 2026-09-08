@@ -6,11 +6,15 @@ using namespace std;
 
 TEST(SolutionTest, test2) {
   Solution solution;
-  char letter = 'a';
-  int expectOutput  = 0; 
+  char letter1 = 'a';
+  int expectOutput1  = 0; 
+  char letter2 = 'b';
+  int expectOutput2  = 1; 
 
-  int output = solution.getLetterIndex(letter);
-  EXPECT_EQ(output, expectOutput);
+  int output1 = solution.getLetterIndex(letter1);
+  EXPECT_EQ(output1, expectOutput1);
+  int output2 = solution.getLetterIndex(letter2);
+  EXPECT_EQ(output2, expectOutput2);
 }
 
 TEST(SolutionTest, test1) {
