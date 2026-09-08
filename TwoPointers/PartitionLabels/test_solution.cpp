@@ -29,4 +29,16 @@ TEST(SolutionTest, test1) {
   }
 }
 
+TEST(SolutionTest, test3) {
+  Solution solution;
+  string s = "ababcc";
+  vector<int> expectOutput  = {2,2,2}; 
+
+  vector<int> output = solution.getLetterCount(s);
+  int size = output.size();
+  for (int i = 0; i < size; i++) {
+    EXPECT_EQ(output[i], expectOutput[i]);
+  }
+}
+
 
