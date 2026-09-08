@@ -4,6 +4,15 @@
 #include <string>
 using namespace std;
 
+TEST(SolutionTest, test2) {
+  Solution solution;
+  char letter = 'a';
+  int expectOutput  = 0; 
+
+  int output = solution.getLetterIndex(letter);
+  EXPECT_EQ(output, expectOutput);
+}
+
 TEST(SolutionTest, test1) {
   Solution solution;
   string s = "ababcc";
@@ -15,4 +24,5 @@ TEST(SolutionTest, test1) {
     EXPECT_EQ(output[i], expectOutput[i]);
   }
 }
+
 

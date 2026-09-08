@@ -6,4 +6,9 @@ class Solution {
   public:
     vector<int> partitionLabels(string s) {
     }
+
+  public:
+    int getLetterIndex(char letter) {
+      return 0;
+    }
 };
