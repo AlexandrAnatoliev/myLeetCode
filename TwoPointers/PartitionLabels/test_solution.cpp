@@ -33,8 +33,10 @@ TEST(SolutionTest, test4) {
   Solution solution;
   string s = "ababcc";
   int expectOutput  = 4; 
+  vector<int> letterCount = {2,2,2};
 
-  int output = solution.getLabelLength(s,0);
+  int output = solution.getLabelLength(
+      s,letterCount,0);
   EXPECT_EQ(output, expectOutput);
 }
 

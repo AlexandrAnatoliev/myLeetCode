@@ -26,7 +26,28 @@ class Solution {
     }
 
   public:
-    int getLabelLength(string s, int start) {
-      return 0;
+    int getLabelLength(
+        string s, 
+        vector<int> letterCount,
+        int start) {
+      bool fl_arr[26] = {};
+      int length = s.length();
+      int ptr = start;
+      int cnt = 0;
+
+      for(int i = start; i < length; i++) {
+        int index = getLetterIndex(s[i]);
+        if(fl_arr[index] == false) {
+          cnt += letterCount[index];
+        }
+        fl_arr[index] = true;
+        letterCount[index]--;
+        cnt--;
+        ptr++;
+        if(cnt == 0) {
+          break;
+        }
+      }
+      return ptr;
     }
 };
