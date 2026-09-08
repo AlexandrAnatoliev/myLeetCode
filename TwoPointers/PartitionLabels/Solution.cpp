@@ -16,7 +16,12 @@ class Solution {
 
   public:
     vector<int> getLetterCount(string s) {
-      vector<int> output = {};
+      vector<int> output(26);
+      int length = s.length();
+      for(int i = 0; i < length; i++) {
+        int index = getLetterIndex(s[i]);
+        output[index] += 1;
+      }
       return output;
     }
 };
