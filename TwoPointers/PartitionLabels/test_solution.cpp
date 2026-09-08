@@ -69,3 +69,14 @@ TEST(SolutionTest, example1) {
   }
 }
 
+TEST(SolutionTest, example2) {
+  Solution solution;
+  string s = "eccbbbbdec";
+  vector<int> expectOutput  = {10}; 
+
+  vector<int> output = solution.partitionLabels(s);
+  int size = expectOutput.size();
+  for (int i = 0; i < size; i++) {
+    EXPECT_EQ(output[i], expectOutput[i]);
+  }
+}
