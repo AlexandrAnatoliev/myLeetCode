@@ -57,5 +57,15 @@ TEST(SolutionTest, test1) {
   }
 }
 
+TEST(SolutionTest, example1) {
+  Solution solution;
+  string s = "ababcbacadefegdehijhklij";
+  vector<int> expectOutput  = {9,7,8}; 
 
+  vector<int> output = solution.partitionLabels(s);
+  int size = expectOutput.size();
+  for (int i = 0; i < size; i++) {
+    EXPECT_EQ(output[i], expectOutput[i]);
+  }
+}
 
