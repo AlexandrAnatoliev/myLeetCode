@@ -65,6 +65,7 @@ numerals in the range `[1, 3999]`.
 
 #### Run tests
 ```
- g++ -std=c++14 test_solution.cpp Solution.cpp -lgtest -lgtest_main -pthread -o test_solution
+ g++ -std=c++14 test_solution.cpp Solution.cpp 
+ -lgtest -lgtest_main -pthread -o test_solution
  ./test_solution
  ```
