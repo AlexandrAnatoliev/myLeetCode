@@ -13,7 +13,7 @@ class Solution {
         if (num >= next) {
           answer += num;
         } else {
-          answer -= next;
+          answer -= num;
         }
       }
       return answer;
