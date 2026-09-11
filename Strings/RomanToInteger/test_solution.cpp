@@ -38,3 +38,12 @@ TEST(SolutionTest, example3) {
   int output = solution.romanToInt(s);
   EXPECT_EQ(output, expectOutput);
 }
+
+TEST(SolutionTest, test2) {
+  Solution solution;
+  string s = "M";
+  int expectOutput  = 1000; 
+
+  int output = solution.romanToInt(s);
+  EXPECT_EQ(output, expectOutput);
+}

@@ -5,14 +5,15 @@ class Solution {
   public:
     int romanToInt(string s) {
       int size = s.size();
-      int answer = charToInt(s[0]);
+      int answer = charToInt(s[size - 1]);
 
       for (int i = 0; i < size - 1; i++) {
+        int num = charToInt(s[i]);
         int next = charToInt(s[i + 1]);
-        if (answer >= next) {
-          answer += next;
+        if (num >= next) {
+          answer += num;
         } else {
-          answer = next - answer;
+          answer -= next;
         }
       }
       return answer;
