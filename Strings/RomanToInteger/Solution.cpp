@@ -4,7 +4,18 @@ using namespace std;
 class Solution {
   public:
     int romanToInt(string s) {
-      return 0;
+      int size = s.size();
+      int answer = charToInt(s[0]);
+
+      for (int i = 0; i < size - 1; i++) {
+        int next = charToInt(s[i + 1]);
+        if (answer >= next) {
+          answer += next;
+        } else {
+          answer = next - answer;
+        }
+      }
+      return answer;
     }
 
   public:
