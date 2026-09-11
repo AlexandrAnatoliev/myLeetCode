@@ -41,7 +41,7 @@ composer dump-autoload
 * [Partition labels](TwoPointers/PartitionLabels/README.md)
 
 ### Строки
-* [Roman to integer](Srtings/RomanToInteger/README.md)
+* [Roman to integer](Strings/RomanToInteger/README.md)
 * Integer to roman
 * Valid palindrome
 * Valid anagram
