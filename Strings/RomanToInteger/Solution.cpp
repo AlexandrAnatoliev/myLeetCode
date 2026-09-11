@@ -9,6 +9,10 @@ class Solution {
 
   public:
     int charToInt(char ch) {
+      switch (ch) {
+        case 'I':
+        return 1;
+      }
       return 0;
     }
 };
