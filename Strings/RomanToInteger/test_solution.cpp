@@ -21,3 +21,11 @@ TEST(SolutionTest, test1) {
   EXPECT_EQ(output, expectOutput);
 }
 
+TEST(SolutionTest, example2) {
+  Solution solution;
+  string s = "LVIII";
+  int expectOutput  = 58; 
+
+  int output = solution.romanToInt(s);
+  EXPECT_EQ(output, expectOutput);
+}
