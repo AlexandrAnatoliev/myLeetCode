@@ -12,3 +12,12 @@ TEST(SolutionTest, example1) {
   EXPECT_EQ(output, expectOutput);
 }
 
+TEST(SolutionTest, test1) {
+  Solution solution;
+  char  ch = 'I';
+  int expectOutput  = 1; 
+
+  int output = solution.charToInt(ch);
+  EXPECT_EQ(output, expectOutput);
+}
+

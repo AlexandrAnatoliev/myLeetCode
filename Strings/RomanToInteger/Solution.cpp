@@ -6,4 +6,9 @@ class Solution {
     int romanToInt(string s) {
       return 0;
     }
+
+  public:
+    int charToInt(char ch) {
+      return 0;
+    }
 };
