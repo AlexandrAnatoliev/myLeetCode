@@ -56,3 +56,12 @@ TEST(SolutionTest, test3) {
   int output = solution.romanToInt(s);
   EXPECT_EQ(output, expectOutput);
 }
+
+TEST(SolutionTest, test4) {
+  Solution solution;
+  string s = "CM";
+  int expectOutput  = 900; 
+
+  int output = solution.romanToInt(s);
+  EXPECT_EQ(output, expectOutput);
+}
