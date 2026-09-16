@@ -8,6 +8,11 @@ class Solution {
     }
 
   public:
+    int getNumPow(int num) {
+      return 0;
+    }
+
+  public:
     string intToString(int n) {
       switch (n) {
         case 1:

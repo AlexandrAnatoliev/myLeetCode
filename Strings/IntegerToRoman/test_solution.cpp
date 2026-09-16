@@ -20,3 +20,12 @@ TEST(SolutionTest, test1) {
   string output = solution.intToString(num);
   EXPECT_EQ(output, expectOutput);
 }
+
+TEST(SolutionTest, test2) {
+  Solution solution;
+  int num = 1234;
+  int expectOutput  = 3; 
+
+  int output = solution.getNumPow(num);
+  EXPECT_EQ(output, expectOutput);
+}
