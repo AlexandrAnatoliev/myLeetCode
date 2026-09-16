@@ -12,3 +12,11 @@ TEST(SolutionTest, example2) {
   EXPECT_EQ(output, expectOutput);
 }
 
+TEST(SolutionTest, test1) {
+  Solution solution;
+  int num = 1;
+  string expectOutput  = "I"; 
+
+  string output = solution.intToString(num);
+  EXPECT_EQ(output, expectOutput);
+}
