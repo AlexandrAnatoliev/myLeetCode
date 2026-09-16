@@ -9,7 +9,13 @@ class Solution {
 
   public:
     int getNumPow(int num) {
-      return 0;
+      num /= 10;
+      int pow = 0;
+      while(num) {
+        num /= 10;
+        pow++;
+      }
+      return pow;
     }
 
   public:
