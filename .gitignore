@@ -11,3 +11,4 @@ TwoPointers/SortColors/test_solution
 TwoPointers/MoveZeroes/test_solution
 TwoPointers/PartitionLabels/test_solution
 Strings/RomanToInteger/test_solution
+Strings/IntegerToRoman/test_solution
