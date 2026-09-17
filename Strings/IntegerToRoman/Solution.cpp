@@ -4,7 +4,14 @@ using namespace std;
 class Solution {
   public:
     string intToRoman(int num) {
-      return "I";
+      int oneNum;
+      string romanNum = "";
+      while(num) {
+        oneNum = getMaxNum(num);
+        num -= oneNum;
+        romanNum = romanNum + intToString(oneNum);
+      }
+      return romanNum;
     }
 
   public:
