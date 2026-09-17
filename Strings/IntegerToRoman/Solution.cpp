@@ -9,6 +9,14 @@ class Solution {
 
   public:
     int getMaxNum(int num) {
+      int nums[] = { 1000, 900, 500, 400, 
+        100, 90, 50, 40, 10, 9, 5, 4, 1};
+      int size = sizeof(nums) - 1;
+      for (int i = 0; i < size; i++) {
+        if(num/nums[i]) {
+          return nums[i];
+        } 
+      }
       return 0;
     }
 
