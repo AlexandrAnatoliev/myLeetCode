@@ -38,3 +38,12 @@ TEST(SolutionTest, test3) {
   int output = solution.getMaxNum(num);
   EXPECT_EQ(output, expectOutput);
 }
+
+TEST(SolutionTest, example1) {
+  Solution solution;
+  int num = 3749;
+  string expectOutput  = "MMMDCCXLIX"; 
+
+  string output = solution.intToRoman(num);
+  EXPECT_EQ(output, expectOutput);
+}
