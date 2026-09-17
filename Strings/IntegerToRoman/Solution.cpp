@@ -57,6 +57,6 @@ class Solution {
         case 1000:
           return "M";
       }
-      return 0;
+      return "";
     }
 };
