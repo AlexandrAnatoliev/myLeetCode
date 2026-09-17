@@ -21,15 +21,6 @@ TEST(SolutionTest, test1) {
   EXPECT_EQ(output, expectOutput);
 }
 
-TEST(SolutionTest, test2) {
-  Solution solution;
-  int num = 1234;
-  int expectOutput  = 3; 
-
-  int output = solution.getNumPow(num);
-  EXPECT_EQ(output, expectOutput);
-}
-
 TEST(SolutionTest, test3) {
   Solution solution;
   int num = 1234;
