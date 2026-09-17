@@ -47,3 +47,12 @@ TEST(SolutionTest, example1) {
   string output = solution.intToRoman(num);
   EXPECT_EQ(output, expectOutput);
 }
+
+TEST(SolutionTest, example3) {
+  Solution solution;
+  int num = 1994;
+  string expectOutput  = "MCMXCIV"; 
+
+  string output = solution.intToRoman(num);
+  EXPECT_EQ(output, expectOutput);
+}
