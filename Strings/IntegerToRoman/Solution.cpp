@@ -8,6 +8,11 @@ class Solution {
     }
 
   public:
+    int getMaxNum(int num) {
+      return 0;
+    }
+
+  public:
     int getNumPow(int num) {
       num /= 10;
       int pow = 0;

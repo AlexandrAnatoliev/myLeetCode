@@ -29,3 +29,12 @@ TEST(SolutionTest, test2) {
   int output = solution.getNumPow(num);
   EXPECT_EQ(output, expectOutput);
 }
+
+TEST(SolutionTest, test3) {
+  Solution solution;
+  int num = 1234;
+  int expectOutput  = 1000; 
+
+  int output = solution.getMaxNum(num);
+  EXPECT_EQ(output, expectOutput);
+}
