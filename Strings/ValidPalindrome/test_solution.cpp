@@ -65,3 +65,12 @@ TEST(SolutionTest, test4) {
   bool output = solution.isPalindrome(s);
   EXPECT_EQ(output, expectOutput);
 }
+
+TEST(SolutionTest, test5) {
+  Solution solution;
+  string s = "0P";
+  bool expectOutput  = false; 
+
+  bool output = solution.isPalindrome(s);
+  EXPECT_EQ(output, expectOutput);
+}
