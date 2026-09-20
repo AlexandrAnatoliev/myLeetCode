@@ -29,7 +29,7 @@ class Solution {
       string sAlpha = "";
       int size = s.length();
       for(int i = 0; i < size; i++) {
-        if(isalpha(s[i])) {
+        if(isalpha(s[i]) || isdigit(s[i])) {
           sAlpha += s[i];
         }
       }
