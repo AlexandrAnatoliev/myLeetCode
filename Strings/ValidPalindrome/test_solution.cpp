@@ -38,3 +38,12 @@ TEST(SolutionTest, test3) {
   string output = solution.toReverse(s);
   EXPECT_EQ(output, expectOutput);
 }
+
+TEST(SolutionTest, example2) {
+  Solution solution;
+  string s = "race a car";
+  bool expectOutput  = false; 
+
+  bool output = solution.isPalindrome(s);
+  EXPECT_EQ(output, expectOutput);
+}
