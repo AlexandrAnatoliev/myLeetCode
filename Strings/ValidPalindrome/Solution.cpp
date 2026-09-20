@@ -5,7 +5,9 @@ using namespace std;
 class Solution {
   public:
     bool isPalindrome(string s) {
-      return false;
+      s = removeNonAlpha(s); 
+      s = toLowerCase(s);
+      return s == toReverse(s);
     }
 
   public:
