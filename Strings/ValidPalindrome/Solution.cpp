@@ -21,4 +21,16 @@ class Solution {
       }
       return sLow;
     }
+
+  public:
+    string removeNonAlpha(string s) {
+      string sAlpha = "";
+      int size = s.length();
+      for(int i = 0; i < size; i++) {
+        if(isalpha(s[i])) {
+          sAlpha += s[i];
+        }
+      }
+      return sAlpha;
+    }
 };

@@ -21,3 +21,11 @@ TEST(SolutionTest, test1) {
   EXPECT_EQ(output, expectOutput);
 }
 
+TEST(SolutionTest, test2) {
+  Solution solution;
+  string s = "A man, a plan, a canal: Panama";
+  string expectOutput  = "AmanaplanacanalPanama"; 
+
+  string output = solution.removeNonAlpha(s);
+  EXPECT_EQ(output, expectOutput);
+}
