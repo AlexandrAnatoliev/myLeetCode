@@ -33,4 +33,14 @@ class Solution {
       }
       return sAlpha;
     }
+
+  public:
+    string toReverse(string s) {
+      string sRev = "";
+      int size = s.length();
+      for(int i = size - 1; i >= 0; i--) {
+        sRev += s[i];
+      }
+      return sRev;
+    }
 };

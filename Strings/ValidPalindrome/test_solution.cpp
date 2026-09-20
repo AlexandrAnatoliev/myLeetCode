@@ -29,3 +29,12 @@ TEST(SolutionTest, test2) {
   string output = solution.removeNonAlpha(s);
   EXPECT_EQ(output, expectOutput);
 }
+
+TEST(SolutionTest, test3) {
+  Solution solution;
+  string s = "qwerty";
+  string expectOutput  = "ytrewq"; 
+
+  string output = solution.toReverse(s);
+  EXPECT_EQ(output, expectOutput);
+}
