@@ -12,3 +12,12 @@ TEST(SolutionTest, example1) {
   EXPECT_EQ(output, expectOutput);
 }
 
+TEST(SolutionTest, test1) {
+  Solution solution;
+  string s = "A man, a plan, a canal: Panama";
+  string expectOutput  = "a man, a plan, a canal: panama"; 
+
+  string output = solution.toLowerCase(s);
+  EXPECT_EQ(output, expectOutput);
+}
+

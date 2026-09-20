@@ -6,4 +6,9 @@ class Solution {
     bool isPalindrome(string s) {
       return false;
     }
+
+  public:
+    string toLowerCase(string s) {
+      return s;
+    }
 };
