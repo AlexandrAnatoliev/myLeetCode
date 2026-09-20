@@ -56,3 +56,12 @@ TEST(SolutionTest, example3) {
   bool output = solution.isPalindrome(s);
   EXPECT_EQ(output, expectOutput);
 }
+
+TEST(SolutionTest, test4) {
+  Solution solution;
+  string s = "OP";
+  bool expectOutput  = false; 
+
+  bool output = solution.isPalindrome(s);
+  EXPECT_EQ(output, expectOutput);
+}
