@@ -74,3 +74,12 @@ TEST(SolutionTest, test5) {
   bool output = solution.isPalindrome(s);
   EXPECT_EQ(output, expectOutput);
 }
+
+TEST(SolutionTest, test6) {
+  Solution solution;
+  string s = "0P";
+  string expectOutput  = "0P"; 
+
+  string output = solution.removeNonAlpha(s);
+  EXPECT_EQ(output, expectOutput);
+}
