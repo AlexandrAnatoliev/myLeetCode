@@ -12,3 +12,4 @@ TwoPointers/MoveZeroes/test_solution
 TwoPointers/PartitionLabels/test_solution
 Strings/RomanToInteger/test_solution
 Strings/IntegerToRoman/test_solution
+Strings/ValidPalindrome/test_solution

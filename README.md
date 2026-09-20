@@ -43,7 +43,7 @@ composer dump-autoload
 ### Строки
 * [Roman to integer](Strings/RomanToInteger/README.md)
 * [Integer to roman](Strings/IntegerToRoman/README.md)
-* Valid palindrome
+* [Valid palindrome](Strings/ValidPalindrome/README.md)
 * Valid anagram
 * Reverse string
 * Zigzag conversion
