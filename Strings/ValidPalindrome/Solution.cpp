@@ -1,4 +1,5 @@
 #include <string>
+#include <cctype>
 using namespace std;
 
 class Solution {
@@ -9,6 +10,15 @@ class Solution {
 
   public:
     string toLowerCase(string s) {
-      return s;
+      string sLow = "";
+      int size = s.length();
+      for(int i = 0; i < size; i++) {
+        if(isupper(s[i])) {
+          sLow += (char)tolower(s[i]);
+        } else {
+          sLow += s[i];
+        }
+      }
+      return sLow;
     }
 };
