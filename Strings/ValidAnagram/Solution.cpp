@@ -10,6 +10,9 @@ class Solution {
 
     array<int, 26> getLettersCount(string s) {
       array<int, 26> arr = {0};
+      for (int i = 0; i < s.length(); i++) {
+        arr[s[i] - 97]++;
+      }
       return arr;
     }
 };
