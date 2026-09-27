@@ -44,7 +44,7 @@ composer dump-autoload
 * [Roman to integer](Strings/RomanToInteger/README.md)
 * [Integer to roman](Strings/IntegerToRoman/README.md)
 * [Valid palindrome](Strings/ValidPalindrome/README.md)
-* Valid anagram
+* [Valid anagram](Strings/ValidAnagram/README.md)
 * Reverse string
 * Zigzag conversion
 * Length of last word
