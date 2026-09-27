@@ -24,3 +24,13 @@ TEST(SolutionTest, test1) {
     EXPECT_EQ(output[i], expectOutput[i]);
   }
 }
+
+TEST(SolutionTest, example2) {
+  Solution solution;
+  string s = "rat";
+  string t = "car";
+  bool expectOutput  = false; 
+
+  bool output = solution.isAnagram(s,t);
+  EXPECT_EQ(output, expectOutput);
+}
