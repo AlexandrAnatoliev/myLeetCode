@@ -13,3 +13,14 @@ TEST(SolutionTest, example1) {
   EXPECT_EQ(output, expectOutput);
 }
 
+TEST(SolutionTest, test1) {
+  Solution solution;
+  string s = "a";
+  int expectOutput[26] = {0}; 
+  expectOutput[0] = 1;
+
+  array<int, 26> output = solution.getLettersCount(s);
+  for (int i = 0; i < 26; i++) {
+    EXPECT_EQ(output[i], expectOutput[i]);
+  }
+}
