@@ -5,7 +5,14 @@ using namespace std;
 class Solution {
   public:
     bool isAnagram(string s, string t) {
-      return false;
+      array<int, 26> arrS = getLettersCount(s);
+      array<int, 26> arrT = getLettersCount(t);
+      for (int i = 0; i < 26; i++) {
+        if(arrS[i] != arrT[i]) {
+          return false;
+        }
+      }
+      return true;
     }
 
     array<int, 26> getLettersCount(string s) {
