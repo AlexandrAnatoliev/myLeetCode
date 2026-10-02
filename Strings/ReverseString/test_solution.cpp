@@ -11,3 +11,12 @@ TEST(SolutionTest, example1) {
   solution.reverseString(s);
   EXPECT_EQ(expectOutput, s);
 }
+
+TEST(SolutionTest, example2) {
+  Solution solution;
+  vector<char> s = {'H', 'a', 'n', 'n', 'a', 'h'};
+  vector<char> expectOutput = {'h', 'a', 'n', 'n', 'a', 'H'};
+
+  solution.reverseString(s);
+  EXPECT_EQ(expectOutput, s);
+}
