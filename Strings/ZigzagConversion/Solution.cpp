@@ -10,7 +10,8 @@ class Solution {
 
   public:
     vector<vector<char>> stringToArray(string s, int cols) {
-      vector<vector<char>> matrix(7, vector<char>(cols,0));
+      int rows = getRowsCnt(s, cols);
+      vector<vector<char>> matrix(rows, vector<char>(cols,0));
       matrix[0] = {'P', 'A', 'H'};
       matrix[1] = {0, 'N', 0};
       matrix[2] = {'A', 'P', 'L'};
