@@ -16,9 +16,9 @@ TEST(SolutionTest, example1) {
 
 TEST(SolutionTest, test1) {
   Solution solution;
-  string s = "PAYPALISHIRING"; 
-  int numRows = 3;
-  vector<vector<char>> expectOutput(7, vector<char>(3,0)); 
+  string s = "PAHNAPLSIIGYIR"; 
+  int cols = 3;
+  vector<vector<char>> expectOutput(7, vector<char>(cols,0)); 
   expectOutput[0] = {'P', 'A', 'H'};
   expectOutput[1] = {0, 'N', 0};
   expectOutput[2] = {'A', 'P', 'L'};
@@ -27,6 +27,6 @@ TEST(SolutionTest, test1) {
   expectOutput[5] = {0, 'Y', 0};
   expectOutput[6] = {'I', 'R', 0};
 
-  vector<vector<char>> output = solution.stringToArray(s);
+  vector<vector<char>> output = solution.stringToArray(s, cols);
   EXPECT_EQ(output, expectOutput);
 }
