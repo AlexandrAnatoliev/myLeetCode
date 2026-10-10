@@ -23,6 +23,19 @@ class Solution {
 
   public:
     int getRowsCnt(string s, int cols) {
-      return 7;
+      int cnt = 0;
+      int singleRows;
+      int length = s.length();
+      while (length > 0) {
+        length -= cols;
+        cnt++;
+        singleRows = cols - 2;       
+        while ((length > 0) && (singleRows > 0)) {
+          singleRows--;
+          length--;
+          cnt++;
+        }
+      }
+      return cnt;
     }
 };
