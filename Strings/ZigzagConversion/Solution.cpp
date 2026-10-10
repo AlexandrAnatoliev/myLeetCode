@@ -39,4 +39,10 @@ class Solution {
       }
       return cnt;
     }
+
+  public:
+    vector<char> getFullRow(string s, int cols, int ptr) {
+      vector<char> row(cols,0);
+      return row;
+    }
 };

@@ -40,3 +40,13 @@ TEST(SolutionTest, test2) {
   int output = solution.getRowsCnt(s, cols);
   EXPECT_EQ(output, expectOutput);
 }  
+
+TEST(SolutionTest, test3) {
+  Solution solution;
+  string s = "PAHNAPLSIIGYIR"; 
+  int cols = 3;
+  vector<char> expectOutput = {'P', 'A', 'H'};
+
+  vector<char> output = solution.getFullRow(s, cols, 0);
+  EXPECT_EQ(output, expectOutput);
+}  
