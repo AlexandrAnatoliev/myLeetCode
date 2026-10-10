@@ -29,4 +29,14 @@ TEST(SolutionTest, test1) {
 
   vector<vector<char>> output = solution.stringToArray(s, cols);
   EXPECT_EQ(output, expectOutput);
-}
+}  
+
+TEST(SolutionTest, test2) {
+  Solution solution;
+  string s = "PAHNAPLSIIGYIR"; 
+  int cols = 3;
+  int expectOutput = 7; 
+
+  int output = solution.getRowsCnt(s, cols);
+  EXPECT_EQ(output, expectOutput);
+}  

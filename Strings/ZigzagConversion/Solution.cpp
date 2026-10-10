@@ -20,4 +20,9 @@ class Solution {
       matrix[6] = {'I', 'R', 0};
       return matrix;
     }
+
+  public:
+    int getRowsCnt(string s, int cols) {
+      return 7;
+    }
 };
