@@ -50,3 +50,14 @@ TEST(SolutionTest, test3) {
   vector<char> output = solution.getFullRow(s, cols, 0);
   EXPECT_EQ(output, expectOutput);
 }  
+
+
+TEST(SolutionTest, test4) {
+  Solution solution;
+  string s = "PAHNAPLSIIGYIR"; 
+  int cols = 3;
+  vector<char> expectOutput = {0, 'N', 0};
+
+  vector<char> output = solution.getSingleCharRow(s, cols, 3, 1);
+  EXPECT_EQ(output, expectOutput);
+}  

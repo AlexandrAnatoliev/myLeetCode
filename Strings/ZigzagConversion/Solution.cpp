@@ -50,4 +50,11 @@ class Solution {
       }
       return row;
     }
+
+  public:
+    vector<char> getSingleCharRow(string s, int cols, int fromPtr, int toPtr) {
+      vector<char> row(cols,0);
+      row[toPtr] = s[fromPtr];
+      return row;
+    }
 };
