@@ -19,11 +19,13 @@ class Solution {
       while (row < rows) {
         matrix[row] = getFullRow(s, cols, fromPtr);
         row++;
+        fromPtr += cols;
         int toPtr = cols - 2;
-        while (toPtr > 0) {
+        while ((row < rows) && (toPtr > 0)) {
           matrix[row] = getSingleCharRow(s, cols, fromPtr, toPtr);
           row++;
           toPtr--;
+          fromPtr++;
         }
       }
       return matrix;
@@ -63,5 +65,10 @@ class Solution {
       vector<char> row(cols,0);
       row[toPtr] = s[fromPtr];
       return row;
+    }
+
+  public:
+    string arrayToString(vector<vector<char>> matrix, int cols, int rows) {
+      return "";
     }
 };
