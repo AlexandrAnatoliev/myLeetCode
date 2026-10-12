@@ -69,6 +69,14 @@ class Solution {
 
   public:
     string arrayToString(vector<vector<char>> matrix, int cols, int rows) {
-      return "";
+      string str = "";
+      for (int c = 0; c < cols; c++) {
+        for (int r = 0; r < rows; r++) {
+          if (matrix[c][r] != 0) {
+            str += matrix[c][r];
+          }
+        }
+      }
+      return str;
     }
 };
