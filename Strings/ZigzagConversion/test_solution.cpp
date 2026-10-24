@@ -78,3 +78,20 @@ TEST(SolutionTest, test5) {
   string expectOutput  = "PAHNAPLSIIGYIR"; 
   EXPECT_EQ(output, expectOutput);
 }  
+
+TEST(SolutionTest, test6) {
+  Solution solution;
+  string s = "PAYPALISHIRING"; 
+  int cols = 3;
+  vector<vector<char>> expectOutput(7, vector<char>(cols,0)); 
+  expectOutput[0] = {'P', 'A', 'Y'};
+  expectOutput[1] = {0, 'P', 0};
+  expectOutput[2] = {'A', 'L', 'I'};
+  expectOutput[3] = {0, 'S', 0};
+  expectOutput[4] = {'H', 'I', 'R'};
+  expectOutput[5] = {0, 'I', 0};
+  expectOutput[6] = {'N', 'G', 0};
+
+  vector<vector<char>> output = solution.stringToArray(s, cols);
+  EXPECT_EQ(output, expectOutput);
+}  
