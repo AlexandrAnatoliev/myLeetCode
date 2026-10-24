@@ -72,7 +72,9 @@ class Solution {
       string str = "";
       for (int c = 0; c < cols; c++) {
         for (int r = 0; r < rows; r++) {
-          if (matrix[c][r] != 0) {
+          if (matrix[c][r] != '\x3'
+              && matrix[c][r] != '\0'
+              && matrix[c][r] != 0) {
             str += matrix[c][r];
           }
         }
