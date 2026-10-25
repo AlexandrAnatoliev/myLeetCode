@@ -71,13 +71,14 @@ class Solution {
     string arrayToString(vector<vector<char>> matrix, int cols, int rows) {
       string str = "";
       for (int c = 0; c < cols; c++) {
-        for (int r = 0; r < rows; r++) {
-          if (matrix[c][r] != '\x3'
-              && matrix[c][r] != '\0'
-              && matrix[c][r] != 0) {
-            str += matrix[c][r];
-          }
-        }
+        int r = 0;
+ //       for (int r = 0; r < rows; r++) {
+//          if (matrix[c][r] != '\x3'
+//              && matrix[c][r] != '\0'
+//              && matrix[c][r] != 0) {
+            str += matrix[r][c];
+//          }
+  //      }
       }
       return str;
     }
