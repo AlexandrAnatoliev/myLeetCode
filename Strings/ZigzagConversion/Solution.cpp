@@ -79,4 +79,17 @@ class Solution {
       }
       return str;
     }
+
+  public:
+    string arrayToVerticalString(vector<vector<char>> matrix, int cols, int rows) {
+      string str = "";
+      for (int c = 0; c < cols; c++) {
+        for (int r = 0; r < rows; r++) {
+          if (matrix[r][c] != 0) {
+            str += matrix[r][c];
+          }
+        }
+      }
+      return str;
+    }
 };
