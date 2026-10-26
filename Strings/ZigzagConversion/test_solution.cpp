@@ -127,6 +127,17 @@ TEST(SolutionTest, test11) {
   EXPECT_EQ(output, expectOutput);
 }  
 
+TEST(SolutionTest, test12) {
+  Solution solution;
+  int cols = 1;
+  vector<vector<char>> matrix(1, vector<char>(cols,0)); 
+  matrix[0] = {'A'};
+  string output = solution.arrayToVerticalString(matrix, cols, 1);
+
+  string expectOutput  = "A"; 
+  EXPECT_EQ(output, expectOutput);
+}  
+
 TEST(SolutionTest, example3) {
   Solution solution;
   string s = "A"; 
