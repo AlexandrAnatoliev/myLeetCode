@@ -57,10 +57,9 @@ class Solution {
   public:
     vector<char> getFullRow(string s, int cols, int ptr) {
       vector<char> row(cols,0);
-      for (int i = 0; cols > 0; i++) {
+      for (int i = 0; i < cols && ptr < (int)s.size(); i++) {
         row[i] = s[ptr];
         ptr++;
-        cols--;
       }
       return row;
     }
