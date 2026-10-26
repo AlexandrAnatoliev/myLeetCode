@@ -106,6 +106,17 @@ TEST(SolutionTest, example2) {
   EXPECT_EQ(output, expectOutput);
 }
 
+TEST(SolutionTest, test10) {
+  Solution solution;
+  string s = "A"; 
+  int cols = 1;
+  vector<vector<char>> expectOutput(1, vector<char>(cols,0)); 
+  expectOutput[0] = {'A'};
+
+  vector<vector<char>> output = solution.stringToArray(s, cols);
+  EXPECT_EQ(output, expectOutput);
+}  
+
 TEST(SolutionTest, example3) {
   Solution solution;
   string s = "A"; 
@@ -115,3 +126,4 @@ TEST(SolutionTest, example3) {
   string output = solution.convert(s, numRows);
   EXPECT_EQ(output, expectOutput);
 }
+
