@@ -148,3 +148,12 @@ TEST(SolutionTest, example3) {
   EXPECT_EQ(output, expectOutput);
 }
 
+TEST(SolutionTest, test13) {
+  Solution solution;
+  string s = "PAYPALISHIRING"; 
+  int numRows = 7;
+  string expectOutput  = "PNAIGYRPIAHLSI"; 
+
+  string output = solution.convert(s, numRows);
+  EXPECT_EQ(output, expectOutput);
+}
