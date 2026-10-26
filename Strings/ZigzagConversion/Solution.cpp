@@ -8,7 +8,7 @@ class Solution {
       int cols = numRows;
       vector<vector<char>> matrix = stringToArray(s, cols);
       int rows = getRowsCnt(s, cols);
-      string str = arrayToVerticalString(matrix, cols, 7);
+      string str = arrayToVerticalString(matrix, cols, rows);
 
       return str;
     }
