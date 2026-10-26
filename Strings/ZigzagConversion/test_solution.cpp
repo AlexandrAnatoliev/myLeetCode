@@ -146,3 +146,13 @@ TEST(SolutionTest, test9) {
   string expectOutput  = "PAIIANPSIYRHLG"; 
   EXPECT_EQ(output, expectOutput);
 }  
+
+TEST(SolutionTest, example2) {
+  Solution solution;
+  string s = "PAYPALISHIRING"; 
+  int numRows = 4;
+  string expectOutput  = "PINALSIGYAHRPI"; 
+
+  string output = solution.convert(s, numRows);
+  EXPECT_EQ(output, expectOutput);
+}
