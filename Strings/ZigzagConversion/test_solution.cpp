@@ -117,6 +117,16 @@ TEST(SolutionTest, test10) {
   EXPECT_EQ(output, expectOutput);
 }  
 
+TEST(SolutionTest, test11) {
+  Solution solution;
+  string s = "A"; 
+  int cols = 1;
+  int expectOutput = 1; 
+
+  int output = solution.getRowsCnt(s, cols);
+  EXPECT_EQ(output, expectOutput);
+}  
+
 TEST(SolutionTest, example3) {
   Solution solution;
   string s = "A"; 
