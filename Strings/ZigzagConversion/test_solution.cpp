@@ -156,3 +156,13 @@ TEST(SolutionTest, example2) {
   string output = solution.convert(s, numRows);
   EXPECT_EQ(output, expectOutput);
 }
+
+TEST(SolutionTest, example3) {
+  Solution solution;
+  string s = "A"; 
+  int numRows = 1;
+  string expectOutput  = "A"; 
+
+  string output = solution.convert(s, numRows);
+  EXPECT_EQ(output, expectOutput);
+}
