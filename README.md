@@ -46,7 +46,7 @@ composer dump-autoload
 * [Valid palindrome](Strings/ValidPalindrome/README.md)
 * [Valid anagram](Strings/ValidAnagram/README.md)
 * [Reverse string](Strings/ReverseString/README.md)
-* Zigzag conversion
+* [Zigzag conversion](Strings/ZigzagConversion/README.md)
 * Length of last word
 
 ### Связные списки
