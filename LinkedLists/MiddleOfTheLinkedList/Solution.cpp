@@ -24,7 +24,12 @@ class Solution {
     }
 
   public:
-    int getListLength(ListNode* head) {
-      return 0;
+    int getListLength(ListNode* node) {
+      int cnt = 1;
+      while (node->next != nullptr) {
+        node = node->next;
+        cnt++;
+      }
+      return cnt;
     }
 };
