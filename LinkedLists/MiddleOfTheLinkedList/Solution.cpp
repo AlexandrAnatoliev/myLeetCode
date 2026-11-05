@@ -22,4 +22,9 @@ class Solution {
     ListNode* middleNode(ListNode* head) {
       return nullptr;
     }
+
+  public:
+    int getListLength(ListNode* head) {
+      return 0;
+    }
 };
