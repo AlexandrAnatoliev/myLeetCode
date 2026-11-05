@@ -20,7 +20,12 @@ struct ListNode {
 class Solution {
   public:
     ListNode* middleNode(ListNode* head) {
-      return nullptr;
+      int listLength = getListLength(head);
+      int nodeNum = listLength / 2;
+      for (int i = 0; i < nodeNum; i++) {
+        head = head->next;
+      }
+      return head;
     }
 
   public:
