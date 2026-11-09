@@ -50,7 +50,7 @@ composer dump-autoload
 * Length of last word
 
 ### Связные списки
-* Middle of the linked list
+* [Middle of the linked list](LinkedLists/Middle of the linked list/README.md)
 * Linked list cycle
 * Remove duplicates from sorted list
 * Reverse linked list
